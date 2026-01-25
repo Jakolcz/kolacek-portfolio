@@ -16,6 +16,7 @@ export const translations = {
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
+        'footer.joke': 'Built with Java... just kidding, Astro, TypeScript & Tailwind.'
     },
     cs: {
         // Navbar
@@ -27,5 +28,6 @@ export const translations = {
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
+        'footer.joke': 'Postaveno na Javě... jen žertuji, Astro, TypeScript & Tailwind.'
     },
 } as const;

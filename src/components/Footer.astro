@@ -1,0 +1,42 @@
+---
+import {getLangFromUrl, useTranslations, getLocalizedPath} from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const currentYear = new Date().getFullYear();
+const socialLinks = [
+    {name: 'GitHub', href: 'https://github.com/Jakolcz'},
+    {name: 'LinkedIn', href: 'https://www.linkedin.com/in/jakub-kol%C3%A1%C4%8Dek-7b714b84/'},
+    {name: 'X (Twitter)', href: 'https://x.com/kolacek_dev'},
+]
+---
+
+<footer class="border-t border-zinc-200 dark:border-zinc-900 py-8 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main footer content -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col items-center md:items-start gap-1">
+                <p class="text-zinc-500 dark:text-zinc-500 text-sm">
+                    {t('footer.copyright', {year: currentYear})}
+                </p>
+                <p class="text-zinc-400 dark:text-zinc-600 text-xs font-mono hidden sm:block">
+                    {t('footer.joke')}
+                </p>
+            </div>
+
+            <div class="flex gap-6">
+                {socialLinks.map((link) => (
+                        <a
+                                class="text-zinc-500 hover:text-primary transition-colors text-sm"
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                        >
+                            {link.name}
+                        </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</footer>
