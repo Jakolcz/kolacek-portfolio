@@ -16,6 +16,15 @@ export default {
                 sans: ['Inter', 'sans-serif'],
                 mono: ['JetBrains Mono', 'monospace'],
             },
+            transitionProperty: {
+                'colors': 'color, background-color, border-color, text-decoration-color, fill, stroke',
+            },
+            transitionDuration: {
+                DEFAULT: '300ms',
+            },
+            transitionTimingFunction: {
+                DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
+            },
         },
     },
     plugins: [],

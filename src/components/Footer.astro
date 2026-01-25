@@ -12,7 +12,7 @@ const socialLinks = [
 ]
 ---
 
-<footer class="border-t border-zinc-200 dark:border-zinc-900 py-8 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+<footer class="border-t border-zinc-200 dark:border-zinc-900 py-8 bg-slate-50 dark:bg-slate-950 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Main footer content -->
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -20,7 +20,7 @@ const socialLinks = [
                 <p class="text-zinc-500 dark:text-zinc-500 text-sm">
                     {t('footer.copyright', {year: currentYear})}
                 </p>
-                <p class="text-zinc-400 dark:text-zinc-600 text-xs font-mono hidden sm:block">
+                <p class="text-zinc-400 dark:text-zinc-600 text-xs font-mono hidden sm:block transition-colors">
                     {t('footer.joke')}
                 </p>
             </div>

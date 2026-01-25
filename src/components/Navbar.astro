@@ -6,7 +6,7 @@ import ThemeToggle from "./ThemeToggle.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-white/5 bg-slate-50/80 dark:bg-slate-950/70 backdrop-blur-md">
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-white/5 bg-slate-50/80 dark:bg-slate-950/70 backdrop-blur-md transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <!-- Logo -->
@@ -30,7 +30,7 @@ const t = useTranslations(lang);
                        href={getLocalizedPath('/contact', lang)}>{t('nav.contact')}</a>
                 </nav>
 
-                <div class="h-4 w-px bg-zinc-300 dark:bg-zinc-800"></div>
+                <div class="h-4 w-px bg-zinc-300 dark:bg-zinc-800 transition-colors"></div>
 
                 <div class="flex items-center gap-3">
                     <LanguageSwitcher/>
