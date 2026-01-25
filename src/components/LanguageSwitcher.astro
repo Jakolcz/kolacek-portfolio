@@ -1,0 +1,31 @@
+---
+import {languages} from "../i18n/translations.ts";
+import {getLangFromUrl} from "../i18n/utils.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname;
+
+function getAlternateUrl(targetLang: string) {
+    let path = currentPath.replace(/^\/(en|cs)/, '') || '/';
+
+    if (targetLang === 'en') {
+        return path;
+    }
+    return `/${targetLang}${path}`;
+}
+---
+<div class="flex items-center gap-1">
+    {Object.entries(languages).map(([code, name]) => (
+            <a
+                    href={getAlternateUrl(code)}
+                    class:list={[
+                        'text-xs font-bold px-2 py-1 rounded transition-colors',
+                        lang === code
+                            ? 'text-primary bg-primary/10'
+                            : 'text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                    ]}
+            >
+                {code.toUpperCase()}
+            </a>
+    ))}
+</div>

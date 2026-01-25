@@ -1,0 +1,50 @@
+---
+import {getLangFromUrl, useTranslations, getLocalizedPath} from "../i18n/utils.ts";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 dark:border-white/5 bg-slate-50/80 dark:bg-slate-950/70 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <!-- Logo -->
+            <a href={getLocalizedPath('/', lang)} class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">terminal</span>
+                <span class="font-mono text-lg font-bold tracking-tight">kolacek.dev</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <nav class="flex gap-6">
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/home', lang)}>{t('nav.home')}</a>
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/services', lang)}>{t('nav.services')}</a>
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/work', lang)}>{t('nav.work')}</a>
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/about', lang)}>{t('nav.about')}</a>
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/contact', lang)}>{t('nav.contact')}</a>
+                </nav>
+
+                <div class="h-4 w-px bg-zinc-300 dark:bg-zinc-800"></div>
+
+                <div class="flex items-center gap-3">
+                    <LanguageSwitcher/>
+                    <ThemeToggle/>
+                    <!--<button class="bg-primary hover:bg-emerald-400 dark:hover:bg-emerald-400 text-white dark:text-slate-950 text-sm font-bold px-4 py-2 rounded-lg transition-colors shadow-md shadow-emerald-500/20 dark:shadow-[0_0_15px_rgba(16,183,127,0.3)]">-->
+                    <!--    {t('nav.hireMe')}-->
+                    <!--</button>-->
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</header>
