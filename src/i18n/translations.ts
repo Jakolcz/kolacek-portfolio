@@ -13,6 +13,7 @@ export const translations = {
         'nav.work': 'Work',
         'nav.about': 'About',
         'nav.contact': 'Contact',
+        'nav.resume': 'Resume',
 
         // Hero Section
         // TODO: Come up with something better
@@ -56,6 +57,56 @@ export const translations = {
         'about.languages.en_level': 'B2 / Proficient',
         'about.languages.note': 'Communication is key to successful delivery.',
 
+        // Resume Page
+        'resume.badge': 'AVAILABLE FOR WORK',
+        'resume.title': 'Jakub Koláček',
+        'resume.subtitle': 'Senior Java Backend Developer',
+        'resume.description': 'Specializing in scalable microservices, system integration, and high-performance backend systems. Building robust solutions with Java 17+, Spring Boot, and Docker.',
+        'resume.actions.share': 'Share',
+        'resume.actions.download': 'Download PDF',
+
+        'resume.experience.title': 'Professional Experience',
+
+        // Job 1
+        'resume.job1.role': 'Senior Java Developer',
+        'resume.job1.company': 'IBA CZ',
+        'resume.job1.date': '06/2015 — Present',
+        'resume.job1.bullet1': 'Developed microservices for Kuoni Tumlare, exposing Elasticsearch data via REST.',
+        'resume.job1.bullet2': 'Implemented payment gateway customization and EET libraries for O2 Czech Republic.',
+        'resume.job1.bullet3': 'Created M2M adapters for payment terminals and SIM top-up services.',
+        'resume.job1.bullet4': 'Built a government data box importer for ČEZ Group with REST interface.',
+        'resume.job1.bullet5': 'Maintained the Legislative Government Helpdesk for the Czech Republic Office of the Government.',
+
+        // Job 2
+        'resume.job2.role': 'Java Developer',
+        'resume.job2.company': 'Hartmann Rico',
+        'resume.job2.date': '06/2013 — 05/2015',
+        'resume.job2.bullet1': 'Developed internal workflow components (forms, requests) connecting to SAP via JCO.',
+        'resume.job2.bullet2': 'Automated PDF generation using wkhtmltopdf and EMC Documentum integration.',
+        'resume.job2.bullet3': 'Maintained standard Java SE applications on application servers.',
+
+        // Job 3
+        'resume.job3.role': 'Android Developer',
+        'resume.job3.company': 'ANeT s.r.o.',
+        'resume.job3.date': '11/2012 — 04/2013',
+        'resume.job3.bullet1': 'Created an Android application serving as a chip card reader/attendance terminal.',
+        'resume.job3.bullet2': 'Implemented data synchronization via WebServices to central databases.',
+
+        'resume.sidebar.tech.title': 'TECHNICAL ARSENAL',
+        'resume.sidebar.tech.backend': 'Backend Core',
+        'resume.sidebar.tech.backend_level': 'Expert',
+        'resume.sidebar.tech.infrastructure': 'Infrastructure',
+        'resume.sidebar.tech.data': 'Data',
+
+        'resume.sidebar.education.title': 'EDUCATION',
+        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 74)',
+        'resume.sidebar.education.degree': 'Information Technology & Database Systems',
+        'resume.sidebar.education.date': '2009 — 2013',
+
+        'resume.sidebar.certifications.title': 'CERTIFICATIONS',
+        'resume.sidebar.connect.title': 'LET\'S CONNECT',
+        'resume.sidebar.connect.text': 'Looking for a senior developer to lead your next big project? I\'m open to new opportunities.',
+
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
         'footer.joke': 'Built with Java... just kidding, Astro, TypeScript & Tailwind.'
@@ -67,6 +118,7 @@ export const translations = {
         'nav.work': 'Práce',
         'nav.about': 'O mně',
         'nav.contact': 'Kontakt',
+        'nav.resume': 'Životopis',
 
         // Hero Section
         'hero.role': 'Java vývojář pro B2B spolupráci',
@@ -108,6 +160,56 @@ export const translations = {
         'about.languages.en': 'Angličtina',
         'about.languages.en_level': 'B2 / Pokročilý',
         'about.languages.note': 'Srozumitelná komunikace je základem úspěšného projektu.',
+
+        // Resume Page
+        'resume.badge': 'K DISPOZICI',
+        'resume.title': 'Jakub Koláček',
+        'resume.subtitle': 'Senior Java Backend Developer',
+        'resume.description': 'Specializace na škálovatelné mikroslužby, systémovou integraci a výkonné backendové systémy. Tvorba robustních řešení s Java 17+, Spring Boot a Dockerem.',
+        'resume.actions.share': 'Sdílet',
+        'resume.actions.download': 'Stáhnout PDF',
+
+        'resume.experience.title': 'Pracovní zkušenosti',
+
+        // Job 1
+        'resume.job1.role': 'Senior Java Developer',
+        'resume.job1.company': 'IBA CZ',
+        'resume.job1.date': '06/2015 — Současnost',
+        'resume.job1.bullet1': 'Vývoj mikroslužeb pro Kuoni Tumlare, zpřístupnění dat z Elasticsearch přes REST.',
+        'resume.job1.bullet2': 'Implementace customizace platební brány a EET knihoven pro O2 Czech Republic.',
+        'resume.job1.bullet3': 'Tvorba M2M adaptérů pro platební terminály a dobíjení SIM karet.',
+        'resume.job1.bullet4': 'Vývoj importéru datových schránek pro skupinu ČEZ s REST rozhraním.',
+        'resume.job1.bullet5': 'Údržba Legislativního Helpdesku pro Úřad vlády ČR.',
+
+        // Job 2
+        'resume.job2.role': 'Java Developer',
+        'resume.job2.company': 'Hartmann Rico',
+        'resume.job2.date': '06/2013 — 05/2015',
+        'resume.job2.bullet1': 'Vývoj interních workflow komponent (formuláře, žádosti) napojených na SAP přes JCO.',
+        'resume.job2.bullet2': 'Automatizace generování PDF pomocí wkhtmltopdf a integrace s EMC Documentum.',
+        'resume.job2.bullet3': 'Údržba standardních Java SE aplikací na aplikačních serverech.',
+
+        // Job 3
+        'resume.job3.role': 'Android Developer',
+        'resume.job3.company': 'ANeT s.r.o.',
+        'resume.job3.date': '11/2012 — 04/2013',
+        'resume.job3.bullet1': 'Tvorba Android aplikace sloužící jako čtečka čipových karet/docházkový terminál.',
+        'resume.job3.bullet2': 'Implementace synchronizace dat přes WebServices do centrálních databází.',
+
+        'resume.sidebar.tech.title': 'TECHNICKÝ ARZENÁL',
+        'resume.sidebar.tech.backend': 'Backend Core',
+        'resume.sidebar.tech.backend_level': 'Expert',
+        'resume.sidebar.tech.infrastructure': 'Infrastruktura',
+        'resume.sidebar.tech.data': 'Data',
+
+        'resume.sidebar.education.title': 'VZDĚLÁNÍ',
+        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 74)',
+        'resume.sidebar.education.degree': 'Informační technologie a databázové systémy',
+        'resume.sidebar.education.date': '2009 — 2013',
+
+        'resume.sidebar.certifications.title': 'CERTIFIKACE',
+        'resume.sidebar.connect.title': 'SPOJME SE',
+        'resume.sidebar.connect.text': 'Hledáte seniorního vývojáře pro vedení vašeho dalšího velkého projektu? Jsem otevřen novým příležitostem.',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
