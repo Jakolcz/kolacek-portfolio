@@ -1,0 +1,180 @@
+---
+import PageHeader from './PageHeader.astro';
+import { useTranslations, getLocalizedPath } from '../i18n/utils';
+
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<main class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <PageHeader
+    badge={t('services.badge')}
+    title={t('services.title')}
+    description={t('services.description')}
+  >
+    <div slot="actions">
+      <a href={getLocalizedPath('/contact', lang)} class="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-emerald-600 transition-colors shadow-lg shadow-primary/20">
+        {t('services.action')}
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </PageHeader>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Card 1: Java Backend Development -->
+    <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all duration-300 flex flex-col">
+      <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
+        <span class="material-symbols-outlined text-9xl text-primary">coffee</span>
+      </div>
+
+      <div class="mb-6">
+        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-2xl">coffee</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card1.title')}</h3>
+        <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
+          {t('services.card1.desc')}
+        </p>
+      </div>
+
+      <div class="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-4 border border-zinc-200 dark:border-zinc-700/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary">security</span>
+            <span class="font-bold text-slate-900 dark:text-white text-sm font-mono">{t('services.card1.feat1.title')}</span>
+          </div>
+          <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {t('services.card1.feat1.desc')}
+          </p>
+        </div>
+        <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-4 border border-zinc-200 dark:border-zinc-700/50">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary">bolt</span>
+            <span class="font-bold text-slate-900 dark:text-white text-sm font-mono">{t('services.card1.feat2.title')}</span>
+          </div>
+          <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {t('services.card1.feat2.desc')}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: System Integration -->
+    <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all duration-300 flex flex-col">
+       <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
+        <span class="material-symbols-outlined text-9xl text-primary">hub</span>
+      </div>
+
+      <div class="mb-6">
+        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-2xl">hub</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card2.title')}</h3>
+        <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
+          {t('services.card2.desc')}
+        </p>
+      </div>
+
+      <div class="mt-auto space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+          <span class="text-slate-900 dark:text-zinc-300 font-medium">{t('services.card2.bullet1')}</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+          <span class="text-slate-900 dark:text-zinc-300 font-medium">{t('services.card2.bullet2')}</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+          <span class="text-slate-900 dark:text-zinc-300 font-medium">{t('services.card2.bullet3')}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: App Maintenance & Support -->
+    <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all duration-300 flex flex-col">
+      <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
+        <span class="material-symbols-outlined text-9xl text-primary">speed</span>
+      </div>
+
+      <div class="mb-6">
+        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-2xl">speed</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card3.title')}</h3>
+        <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
+          {t('services.card3.desc')}
+        </p>
+      </div>
+
+      <div class="mt-auto flex flex-wrap gap-2">
+        <span class="px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-zinc-300 text-sm font-mono border border-zinc-300 dark:border-zinc-700">
+            {t('services.card3.tag1')}
+        </span>
+        <span class="px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-zinc-300 text-sm font-mono border border-zinc-300 dark:border-zinc-700">
+            {t('services.card3.tag2')}
+        </span>
+        <span class="px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-zinc-300 text-sm font-mono border border-zinc-300 dark:border-zinc-700">
+            {t('services.card3.tag3')}
+        </span>
+      </div>
+    </div>
+
+    <!-- Card 4: Automation & Hardware -->
+    <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all duration-300 flex flex-col">
+       <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
+        <span class="material-symbols-outlined text-9xl text-primary">memory</span>
+      </div>
+
+      <div class="mb-6">
+        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-2xl">memory</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card4.title')}</h3>
+        <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
+          {t('services.card4.desc')}
+        </p>
+      </div>
+
+      <div class="mt-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
+         <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">payments</span>
+            <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub1.title')}</div>
+            <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
+                {t('services.card4.sub1.desc')}
+            </p>
+         </div>
+         <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">credit_card</span>
+            <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub2.title')}</div>
+            <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
+                {t('services.card4.sub2.desc')}
+            </p>
+         </div>
+         <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">visibility</span>
+            <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub3.title')}</div>
+            <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
+                {t('services.card4.sub3.desc')}
+            </p>
+         </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-24 text-center">
+    <h2 class="text-sm font-bold tracking-[0.2em] text-zinc-400 dark:text-zinc-600 uppercase mb-8">
+      {t('services.techstack.title')}
+    </h2>
+    <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">JAVA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">SPRING</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">KAFKA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">DOCKER</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">POSTGRESQL</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">AWS</span>
+    </div>
+  </div>
+</main>
