@@ -171,7 +171,7 @@ export const translations = {
         'projects.card8.title': 'Smart Camera Dashboard',
         'projects.card8.desc': 'Video stream analysis using OpenCV and YOLO DNN for object detection and license plate recognition.',
         'projects.card9.title': 'Evil Things',
-        'projects.card9.desc': 'A Rust-based prank toolkit for colleagues who forget to lock their workstations. Manipulates Registry, system sounds, and input via WinAPI.',
+        'projects.card9.desc': 'A Rust and C based prank toolkit for colleagues who forget to lock their workstations. Manipulates Registry, system sounds, and input via WinAPI.',
         'projects.card10.title': 'MidPoint CodeGen',
         'projects.card10.desc': 'Developer tool automating the generation of boilerplate code via a maven plugin for Evolveum MidPoint Identity Management connectors.',
 
@@ -345,7 +345,7 @@ export const translations = {
         'projects.card8.title': 'Chytrý kamerový dashboard',
         'projects.card8.desc': 'Analýza video streamu pomocí OpenCV a YOLO DNN pro detekci objektů a rozpoznávání SPZ.',
         'projects.card9.title': 'Evil Things',
-        'projects.card9.desc': 'Sada nástrojů v Rustu na žerty pro kolegy, kteří si zapomínají zamknout stanici. Manipuluje s Registry, systémovými zvuky a vstupy přes WinAPI.',
+        'projects.card9.desc': 'Sada nástrojů v Rustu a C na žerty pro kolegy, kteří si zapomínají zamknout počítač. Manipuluje s Registry, systémovými zvuky a vstupy přes WinAPI.',
         'projects.card10.title': 'MidPoint CodeGen',
         'projects.card10.desc': 'Vývojářský nástroj automatizující generování boilerplate kódu pomocí maven pluginu pro konektory Evolveum MidPoint Identity Management.',
 
