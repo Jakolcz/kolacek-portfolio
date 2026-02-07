@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  colSpan?: string;
+  className?: string;
+}
+
+const { title, description, tags, colSpan = '', className = '' } = Astro.props;
+---
+
+<div class={`group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 flex flex-col ${colSpan} ${className}`}>
+
+  <div class="mb-6">
+    <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{title}</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+      {description}
+    </p>
+  </div>
+
+  <div class="mt-auto flex flex-wrap gap-2">
+    {tags.map((tag) => (
+      <span class="px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-zinc-300 text-sm font-mono border border-zinc-300 dark:border-zinc-700">
+        {tag}
+      </span>
+    ))}
+  </div>
+</div>

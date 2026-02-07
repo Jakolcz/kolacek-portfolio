@@ -1,0 +1,146 @@
+---
+import PageHeader from './PageHeader.astro';
+import ProjectCard from './ProjectCard.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'en' | 'cs';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<main class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
+  <!-- Header -->
+  <PageHeader
+    badge={t('projects.badge')}
+    title={t('projects.title')}
+    description={t('projects.description')}
+  />
+
+  <!-- Section 1: FinTech & Payments -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section1.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 (Large - col-span-2) -->
+      <ProjectCard
+        colSpan="md:col-span-2 lg:col-span-2"
+        title={t('projects.card1.title')}
+        description={t('projects.card1.desc')}
+        tags={['#Java', '#Spring Boot', '#SOAP', '#OracleDB']}
+      />
+      <!-- Card 2 (Standard) -->
+      <ProjectCard
+        title={t('projects.card2.title')}
+        description={t('projects.card2.desc')}
+        tags={['#IoT', '#Netty', '#SecureSockets']}
+      />
+    </div>
+  </section>
+
+  <!-- Section 2: Enterprise Systems & Integration -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl">dns</span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section2.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <ProjectCard
+        title={t('projects.card3.title')}
+        description={t('projects.card3.desc')}
+        tags={['#Java 17', '#Spring Boot', '#Elasticsearch', '#Docker']}
+      />
+      <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card4.title')}
+        description={t('projects.card4.desc')}
+        tags={['#XML', '#Integration', '#REST']}
+      />
+      <!-- Card 3 -->
+      <ProjectCard
+        title={t('projects.card5.title')}
+        description={t('projects.card5.desc')}
+        tags={['#Spring', '#Liferay', '#PostgreSQL']}
+      />
+    </div>
+  </section>
+
+  <!-- Section 3: IoT & Logistics -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl">router</span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section3.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <ProjectCard
+        title={t('projects.card6.title')}
+        description={t('projects.card6.desc')}
+        tags={['#Android', '#Java', '#Logistics']}
+      />
+      <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card7.title')}
+        description={t('projects.card7.desc')}
+        tags={['#Android', '#Hardware', '#WebServices']}
+      />
+    </div>
+  </section>
+
+  <!-- Section 4: Experiments & Open Source -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl">science</span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section4.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 (Wide/Featured) -->
+      <ProjectCard
+        colSpan="md:col-span-2 lg:col-span-2"
+        title={t('projects.card8.title')}
+        description={t('projects.card8.desc')}
+        tags={['#ComputerVision', '#YOLO', '#OpenCV']}
+      />
+      <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card9.title')}
+        description={t('projects.card9.desc')}
+        tags={['#Rust', '#WinAPI', '#Prank']}
+      />
+      <!-- Card 3 -->
+      <ProjectCard
+        title={t('projects.card10.title')}
+        description={t('projects.card10.desc')}
+        tags={['#Java', '#XML', '#Codegen']}
+      />
+    </div>
+  </section>
+
+  <!-- Tech Stack Strip -->
+  <div class="mt-24 text-center border-t border-zinc-200 dark:border-zinc-800 pt-16">
+    <h2 class="text-sm font-bold tracking-[0.2em] text-zinc-400 dark:text-zinc-600 uppercase mb-8">
+      {t('projects.techstack.title')}
+    </h2>
+    <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">JAVA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">SPRING</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">KAFKA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">DOCKER</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">POSTGRESQL</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">AWS</span>
+    </div>
+  </div>
+</main>

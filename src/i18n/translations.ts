@@ -142,6 +142,41 @@ export const translations = {
         'resume.sidebar.connect.title': 'LET\'S CONNECT',
         'resume.sidebar.connect.text': 'Looking for a senior developer to lead your next big project? I\'m open to new opportunities.',
 
+        // Projects Page
+        'projects.badge': 'PORTFOLIO',
+        'projects.title': 'Selected Projects',
+        'projects.description': 'A curated list of technical challenges I\'ve solved. Delivering robust backend solutions and system integrations across FinTech, Enterprise, and IoT domains.',
+
+        'projects.section1.title': 'FinTech & Payments',
+        'projects.card1.title': 'Payment Gateway Customization',
+        'projects.card1.desc': 'Extensive customization of a major payment gateway. Implemented secure transaction handling, recurring payments, and reconciliation logic.',
+        'projects.card2.title': 'M2M Payment Adapters',
+        'projects.card2.desc': 'Designed middleware for communication between payment terminals and SIM top-up services, enabling automated transactions without human intervention.',
+
+        'projects.section2.title': 'Enterprise Systems & Integration',
+        'projects.card3.title': 'Travel Microservices',
+        'projects.card3.desc': 'Developed scalable microservices exposing Elasticsearch data via REST APIs for a leading global travel management company.',
+        'projects.card4.title': 'Data Box Importer',
+        'projects.card4.desc': 'Automated parsing and ingestion of government data box messages into internal DB. Includes a REST interface for verification.',
+        'projects.card5.title': 'Government Helpdesk',
+        'projects.card5.desc': 'Backend logic for a high-traffic citizen support portal, handling ticket routing and status tracking.',
+
+        'projects.section3.title': 'IoT & Logistics',
+        'projects.card6.title': 'Vending Machine Management',
+        'projects.card6.desc': 'Telemetry solution for tobacco vending machines. Server backend for logistics planning + Android app for drivers.',
+        'projects.card7.title': 'Attendance Terminal',
+        'projects.card7.desc': 'Android-based chip card reader serving as an attendance terminal. Syncs entry/exit data via WebServices.',
+
+        'projects.section4.title': 'Experiments & Open Source',
+        'projects.card8.title': 'Smart Camera Dashboard',
+        'projects.card8.desc': 'Video stream analysis using OpenCV and YOLO DNN for object detection and license plate recognition.',
+        'projects.card9.title': 'Evil Things',
+        'projects.card9.desc': 'A Rust and C based prank toolkit for colleagues who forget to lock their workstations. Manipulates Registry, system sounds, and input via WinAPI.',
+        'projects.card10.title': 'MidPoint CodeGen',
+        'projects.card10.desc': 'Developer tool automating the generation of boilerplate code via a maven plugin for Evolveum MidPoint Identity Management connectors.',
+
+        'projects.techstack.title': 'TECHNOLOGIES I WORK WITH',
+
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
         'footer.joke': 'Built with Java... just kidding, Astro, TypeScript & Tailwind.'
@@ -157,8 +192,8 @@ export const translations = {
 
         // Hero Section
         'hero.role': 'Java vývojář pro B2B spolupráci',
-        'hero.title': 'Robustní Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">Backendy</span> pro náročné enterprise systémy',
-        'hero.description1': 'Senior Java Developer na volné noze se specializací na',
+        'hero.title': 'Robustní Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">backendy</span> pro náročné enterprise systémy',
+        'hero.description1': 'Senior Java vývojář na volné noze se specializací na',
         'hero.tech1': 'Spring Boot',
         'hero.tech2': 'Microservices',
         'hero.tech3': 'REST API',
@@ -173,52 +208,52 @@ export const translations = {
 
         // Services Page
         'services.badge': 'SLUŽBY',
-        'services.title': 'Spolehlivý Backend Vývoj & Systémová Integrace',
-        'services.description': 'Dodávám praktická, robustní softwarová řešení bez zbytečného over-engineeringu. Zaměřuji se na stabilitu, udržitelnost a přímou obchodní hodnotu prostřednictvím čistého kódu a osvědčené architektury.',
-        'services.action': 'Začít Projekt',
+        'services.title': 'Spolehlivý vývoj backendu a systémová integrace',
+        'services.description': 'Dodávám praktická a robustní softwarová řešení bez zbytečného over-engineeringu. Zaměřuji se na stabilitu, udržitelnost a přímou obchodní hodnotu prostřednictvím čistého kódu a osvědčené architektury.',
+        'services.action': 'Zahájit spolupráci',
 
-        'services.card1.title': 'Java Backend Vývoj',
-        'services.card1.desc': 'Tvorba škálovatelných enterprise aplikací s využitím moderní Javy (17+) a Spring Boot. Zaměřuji se na bezpečné, výkonné API a mikroslužby.',
-        'services.card1.feat1.title': 'Bezpečnostní Design',
+        'services.card1.title': 'Vývoj Java backendů',
+        'services.card1.desc': 'Tvorba škálovatelných enterprise aplikací s využitím moderní Javy (17+) a Spring Boot. Zaměřuji se na bezpečné a výkonné API a mikroslužby.',
+        'services.card1.feat1.title': 'Bezpečnostní architektura',
         'services.card1.feat1.desc': 'OAuth2, JWT a digitální podpisy (XAdES/PAdES).',
-        'services.card1.feat2.title': 'Vysoký Výkon',
+        'services.card1.feat2.title': 'Vysoký výkon',
         'services.card1.feat2.desc': 'Optimalizované ladění JVM a efektivní dotazy v Elasticsearch.',
 
-        'services.card2.title': 'Systémová Integrace',
+        'services.card2.title': 'Systémová integrace',
         'services.card2.desc': 'Bezproblémové propojení různorodých systémů. Mám rozsáhlé zkušenosti s integrací služeb třetích stran pro sjednocení toku dat.',
-        'services.card2.bullet1': 'Platební Brány (O2 / Barion)',
-        'services.card2.bullet2': 'ERP Systémy (SAP JCO / Helios)',
-        'services.card2.bullet3': 'Datové Schránky',
+        'services.card2.bullet1': 'Platební brány (O2 / Barion)',
+        'services.card2.bullet2': 'ERP systémy (SAP JCO / Helios)',
+        'services.card2.bullet3': 'Datové schránky',
 
-        'services.card3.title': 'Údržba a Podpora Aplikací',
+        'services.card3.title': 'Údržba a podpora aplikací',
         'services.card3.desc': 'Udržování kritických systémů v chodu. Stabilizuji legacy kód, spravuji helpdesk tickety a zajišťuji hladký běh portálů.',
-        'services.card3.tag1': 'Opravy Chyb',
-        'services.card3.tag2': 'Refaktoring Legacy',
-        'services.card3.tag3': 'SLA Podpora',
+        'services.card3.tag1': 'Opravy chyb',
+        'services.card3.tag2': 'Refaktoring legacy kódu',
+        'services.card3.tag3': 'SLA podpora',
 
-        'services.card4.title': 'Automatizace a Hardwarová Komunikace',
+        'services.card4.title': 'Automatizace a komunikace s hardwarem',
         'services.card4.desc': 'Přemostění propasti mezi digitálním softwarem a fyzickým hardwarem. Vyvíjím specializované komunikační vrstvy pro IoT zařízení a průmyslové vybavení.',
         'services.card4.sub1.title': 'Automaty',
-        'services.card4.sub1.desc': 'MDB Protokol / Platební Systémy',
+        'services.card4.sub1.desc': 'MDB protokol / Platební systémy',
         'services.card4.sub2.title': 'Terminály',
-        'services.card4.sub2.desc': 'Integrace Čteček Karet & Android',
+        'services.card4.sub2.desc': 'Integrace čteček karet & Android',
         'services.card4.sub3.title': 'Vize',
-        'services.card4.sub3.desc': 'Analýza Kamerového Streamu / YOLO',
+        'services.card4.sub3.desc': 'Analýza kamerového streamu / YOLO',
 
-        'services.techstack.title': 'TECHNOLOGIE SE KTERÝMI PRACUJI',
+        'services.techstack.title': 'TECHNOLOGIE, SE KTERÝMI PRACUJI',
 
         // About Page
         'about.badge': 'O MNĚ',
         'about.title': 'Ahoj, jsem Jakub.',
-        'about.description': 'Jsem Senior Java Backend Developer z Brna. Zaměřuji se na vývoj stabilních a škálovatelných systémů pro enterprise a finanční sektor.',
+        'about.description': 'Jsem senior Java backend vývojář z Brna. Zaměřuji se na vývoj stabilních a škálovatelných systémů pro enterprise a finanční sektor.',
         'about.journey.title': 'Moje cesta',
         'about.journey.p1': 'Vše začalo na <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT</strong>, kde jsem získal základy inženýrského myšlení. Mým cílem není jen psát kód, ale tvořit trvanlivá a udržitelná řešení.',
         'about.journey.p2': 'Své zkušenosti jsem sbíral v <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> a <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, kde jsem se naučil pohybovat v komplexním korporátním prostředí. Díky tomu vím, jak důležitá je preciznost, nastavené procesy a spolehlivost.',
-        'about.journey.p3': 'V <strong class="text-slate-900 dark:text-white font-semibold">polovině roku 2025</strong> jsem se postavil na vlastní nohy. Svým klientům nyní nabízím enterprise kvalitu a stabilitu napřímo. Sázím na ověřené technologie—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong> a <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> jsou mé hlavní nástroje, protože jednoduše fungují a dobře se škálují.',
+        'about.journey.p3': 'V <strong class="text-slate-900 dark:text-white font-semibold">polovině roku 2025</strong> jsem přešel na volnou nohu. Svým klientům nyní nabízím enterprise kvalitu a stabilitu napřímo. Sázím na ověřené technologie—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong> a <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> jsou mé hlavní nástroje, protože jednoduše fungují a dobře se škálují.',
         'about.journey.tag1': 'Stabilita',
         'about.journey.tag2': 'Backend',
         'about.journey.tag3': 'Architektura',
-        'about.stack.title': 'Můj Tech Stack',
+        'about.stack.title': 'Můj tech stack',
         'about.stack.languages': 'JAZYKY',
         'about.stack.frameworks': 'FRAMEWORKY',
         'about.stack.infrastructure': 'INFRASTRUKTURA',
@@ -280,6 +315,41 @@ export const translations = {
         'resume.sidebar.certifications.title': 'CERTIFIKACE',
         'resume.sidebar.connect.title': 'SPOJME SE',
         'resume.sidebar.connect.text': 'Hledáte seniorního vývojáře pro vedení vašeho dalšího velkého projektu? Jsem otevřen novým příležitostem.',
+
+        // Projects Page
+        'projects.badge': 'PORTFOLIO',
+        'projects.title': 'Vybrané projekty',
+        'projects.description': 'Výběr technických výzev a řešení, která jsem realizoval. Dodávám robustní backendová řešení a systémové integrace v oblastech FinTech, Enterprise a IoT.',
+
+        'projects.section1.title': 'FinTech a platby',
+        'projects.card1.title': 'Úprava platební brány',
+        'projects.card1.desc': 'Komplexní úpravy významné platební brány. Implementace bezpečného zpracování transakcí, opakovaných plateb a logiky pro odsouhlasování (reconcilliation).',
+        'projects.card2.title': 'M2M platební adaptéry',
+        'projects.card2.desc': 'Návrh middleware pro komunikaci mezi platebními terminály a službami pro dobíjení SIM, umožňující automatizované transakce bez lidského zásahu.',
+
+        'projects.section2.title': 'Enterprise systémy a integrace',
+        'projects.card3.title': 'Mikroslužby v cestovním ruchu',
+        'projects.card3.desc': 'Vývoj škálovatelných mikroslužeb zpřístupňujících data z Elasticsearch přes REST API pro přední globální společnost v oblasti cestovního ruchu.',
+        'projects.card4.title': 'Importér datových schránek',
+        'projects.card4.desc': 'Automatizované parsování a ukládání zpráv z vládních datových schránek do interní databáze. Zahrnuje REST rozhraní pro ověřování.',
+        'projects.card5.title': 'Vládní helpdesk',
+        'projects.card5.desc': 'Backendová logika pro portál podpory občanů s vysokou návštěvností, zpracování směrování tiketů a sledování stavu.',
+
+        'projects.section3.title': 'IoT a logistika',
+        'projects.card6.title': 'Správa prodejních automatů',
+        'projects.card6.desc': 'Telemetrické řešení pro automaty na tabákové výrobky. Serverová část pro plánování logistiky + Android aplikace pro řidiče.',
+        'projects.card7.title': 'Docházkový terminál',
+        'projects.card7.desc': 'Čtečka čipových karet na bázi Androidu sloužící jako docházkový terminál. Synchronizuje data o příchodech/odchodech přes WebServices.',
+
+        'projects.section4.title': 'Experimenty a open source',
+        'projects.card8.title': 'Chytrý kamerový dashboard',
+        'projects.card8.desc': 'Analýza video streamu pomocí OpenCV a YOLO DNN pro detekci objektů a rozpoznávání SPZ.',
+        'projects.card9.title': 'Evil Things',
+        'projects.card9.desc': 'Sada nástrojů v Rustu a C na žerty pro kolegy, kteří si zapomínají zamknout počítač. Manipuluje s Registry, systémovými zvuky a vstupy přes WinAPI.',
+        'projects.card10.title': 'MidPoint CodeGen',
+        'projects.card10.desc': 'Vývojářský nástroj automatizující generování boilerplate kódu pomocí maven pluginu pro konektory Evolveum MidPoint Identity Management.',
+
+        'projects.techstack.title': 'TECHNOLOGIE, SE KTERÝMI PRACUJI',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
