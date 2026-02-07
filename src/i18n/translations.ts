@@ -142,6 +142,41 @@ export const translations = {
         'resume.sidebar.connect.title': 'LET\'S CONNECT',
         'resume.sidebar.connect.text': 'Looking for a senior developer to lead your next big project? I\'m open to new opportunities.',
 
+        // Projects Page
+        'projects.badge': 'PORTFOLIO',
+        'projects.title': 'Selected Projects',
+        'projects.description': 'A curated list of technical challenges I\'ve solved. Delivering robust backend solutions and system integrations across FinTech, Enterprise, and IoT domains.',
+
+        'projects.section1.title': 'FinTech & Payments',
+        'projects.card1.title': 'Payment Gateway Customization',
+        'projects.card1.desc': 'Extensive customization of a major payment gateway. Implemented secure transaction handling, recurring payments, and reconciliation logic.',
+        'projects.card2.title': 'M2M Payment Adapters',
+        'projects.card2.desc': 'Designed middleware for communication between payment terminals and SIM top-up services, enabling automated transactions without human intervention.',
+
+        'projects.section2.title': 'Enterprise Systems & Integration',
+        'projects.card3.title': 'Travel Microservices',
+        'projects.card3.desc': 'Developed scalable microservices exposing Elasticsearch data via REST APIs for a leading global travel management company.',
+        'projects.card4.title': 'Data Box Importer',
+        'projects.card4.desc': 'Automated parsing and ingestion of government data box messages into internal DB. Includes a REST interface for verification.',
+        'projects.card5.title': 'Government Helpdesk',
+        'projects.card5.desc': 'Backend logic for a high-traffic citizen support portal, handling ticket routing and status tracking.',
+
+        'projects.section3.title': 'IoT & Logistics',
+        'projects.card6.title': 'Vending Machine Management',
+        'projects.card6.desc': 'Telemetry solution for tobacco vending machines. Server backend for logistics planning + Android app for drivers.',
+        'projects.card7.title': 'Attendance Terminal',
+        'projects.card7.desc': 'Android-based chip card reader serving as an attendance terminal. Syncs entry/exit data via WebServices.',
+
+        'projects.section4.title': 'Experiments & Open Source',
+        'projects.card8.title': 'Smart Camera Dashboard',
+        'projects.card8.desc': 'Video stream analysis using OpenCV and YOLO DNN for object detection and license plate recognition.',
+        'projects.card9.title': 'Evil Things',
+        'projects.card9.desc': 'A Rust-based prank toolkit for colleagues who forget to lock their workstations. Manipulates Registry, system sounds, and input via WinAPI.',
+        'projects.card10.title': 'MidPoint CodeGen',
+        'projects.card10.desc': 'Developer tool automating the generation of boilerplate code via a maven plugin for Evolveum MidPoint Identity Management connectors.',
+
+        'projects.techstack.title': 'TECHNOLOGIES I WORK WITH',
+
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
         'footer.joke': 'Built with Java... just kidding, Astro, TypeScript & Tailwind.'
@@ -280,6 +315,41 @@ export const translations = {
         'resume.sidebar.certifications.title': 'CERTIFIKACE',
         'resume.sidebar.connect.title': 'SPOJME SE',
         'resume.sidebar.connect.text': 'Hledáte seniorního vývojáře pro vedení vašeho dalšího velkého projektu? Jsem otevřen novým příležitostem.',
+
+        // Projects Page
+        'projects.badge': 'PORTFOLIO',
+        'projects.title': 'Vybrané Projekty',
+        'projects.description': 'Seznam technických výzev, které jsem vyřešil. Dodávám robustní backendová řešení a systémové integrace v oblastech FinTech, Enterprise a IoT.',
+
+        'projects.section1.title': 'FinTech a Platby',
+        'projects.card1.title': 'Úprava Platební Brány',
+        'projects.card1.desc': 'Rozsáhlá úprava velké platební brány. Implementace bezpečného zpracování transakcí, opakovaných plateb a logiky pro odsouhlasování (reconcilliation).',
+        'projects.card2.title': 'M2M Platební Adaptéry',
+        'projects.card2.desc': 'Návrh middlewaru pro komunikaci mezi platebními terminály a službami pro dobíjení SIM, umožňující automatizované transakce bez lidského zásahu.',
+
+        'projects.section2.title': 'Enterprise Systémy a Integrace',
+        'projects.card3.title': 'Cestovní Mikroslužby',
+        'projects.card3.desc': 'Vývoj škálovatelných mikroslužeb zpřístupňujících data z Elasticsearch přes REST API pro přední globální společnost v oblasti cestovního ruchu.',
+        'projects.card4.title': 'Importér Datových Schránek',
+        'projects.card4.desc': 'Automatizované parsování a ukládání zpráv z vládních datových schránek do interní databáze. Zahrnuje REST rozhraní pro ověřování.',
+        'projects.card5.title': 'Vládní Helpdesk',
+        'projects.card5.desc': 'Backendová logika pro portál podpory občanů s vysokou návštěvností, zpracování směrování tiketů a sledování stavu.',
+
+        'projects.section3.title': 'IoT a Logistika',
+        'projects.card6.title': 'Správa Prodejních Automatů',
+        'projects.card6.desc': 'Telemetrické řešení pro automaty na tabákové výrobky. Serverový backend pro plánování logistiky + Android aplikace pro řidiče.',
+        'projects.card7.title': 'Docházkový Terminál',
+        'projects.card7.desc': 'Čtečka čipových karet na bázi Androidu sloužící jako docházkový terminál. Synchronizuje data o příchodech/odchodech přes WebServices.',
+
+        'projects.section4.title': 'Experimenty a Open Source',
+        'projects.card8.title': 'Chytrý Kamerový Dashboard',
+        'projects.card8.desc': 'Analýza video streamu pomocí OpenCV a YOLO DNN pro detekci objektů a rozpoznávání SPZ.',
+        'projects.card9.title': 'Evil Things',
+        'projects.card9.desc': 'Rust toolkit na žerty pro kolegy, kteří si zapomínají zamknout stanici. Manipuluje s Registry, systémovými zvuky a vstupy přes WinAPI.',
+        'projects.card10.title': 'MidPoint CodeGen',
+        'projects.card10.desc': 'Vývojářský nástroj automatizující generování boilerplate kódu pomocí maven pluginu pro konektory Evolveum MidPoint Identity Management.',
+
+        'projects.techstack.title': 'TECHNOLOGIE, SE KTERÝMI PRACUJI',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
