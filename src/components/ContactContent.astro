@@ -1,0 +1,232 @@
+---
+import PageHeader from './PageHeader.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'en' | 'cs';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<main class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <PageHeader
+    badge={t('contact.badge')}
+    title={t('contact.title')}
+    description={t('contact.description')}
+  />
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
+    <!-- Left Column: The Form -->
+    <div class="lg:col-span-2">
+      <form id="contact-form" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Name -->
+          <div class="space-y-2">
+            <label for="name" class="block text-sm font-mono text-zinc-500 dark:text-zinc-400">
+              {t('contact.form.name')}
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-slate-900 dark:text-white font-mono focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="space-y-2">
+            <label for="email" class="block text-sm font-mono text-zinc-500 dark:text-zinc-400">
+              {t('contact.form.email')}
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-slate-900 dark:text-white font-mono focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+            />
+          </div>
+        </div>
+
+        <!-- Category -->
+        <div class="space-y-2">
+          <label for="category" class="block text-sm font-mono text-zinc-500 dark:text-zinc-400">
+            {t('contact.form.category')}
+          </label>
+          <div class="relative">
+            <select
+              id="category"
+              name="category"
+              class="w-full appearance-none bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-slate-900 dark:text-white font-mono focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+            >
+              <option value="General Inquiry">{t('contact.form.category.general')}</option>
+              <option value="Backend Development">{t('contact.form.category.backend')}</option>
+              <option value="System Integration">{t('contact.form.category.integration')}</option>
+              <option value="Consulting">{t('contact.form.category.consulting')}</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-500">
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="space-y-2">
+          <label for="message" class="block text-sm font-mono text-zinc-500 dark:text-zinc-400">
+            {t('contact.form.message')}
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            class="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-slate-900 dark:text-white font-mono focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+          ></textarea>
+        </div>
+
+        <!-- Turnstile -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAA9_E5v_D_D_D_D_" data-theme="dark"></div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          id="submit-btn"
+          class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-mono font-bold px-6 py-3 rounded-lg transition-colors shadow-lg shadow-primary/20"
+        >
+          <span>{t('contact.form.submit')}</span>
+        </button>
+
+        <!-- Status Messages -->
+        <div id="form-success" class="hidden p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 font-mono text-sm">
+          {t('contact.form.success')}
+        </div>
+        <div id="form-error" class="hidden p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 font-mono text-sm">
+          {t('contact.form.error')}
+        </div>
+      </form>
+    </div>
+
+    <!-- Right Column: Info Cards -->
+    <div class="space-y-6">
+      <!-- Direct Contact -->
+      <div class="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6">
+        <h3 class="text-sm font-bold tracking-widest text-zinc-400 dark:text-zinc-600 uppercase mb-6">
+          Direct Connect
+        </h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="mailto:jakub@kolacek.dev" class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors group">
+              <span class="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 group-hover:border-primary/50 transition-colors">
+                <span class="material-symbols-outlined text-xl">mail</span>
+              </span>
+              <span class="font-mono text-sm">jakub[at]kolacek.dev</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/jakubkolacek" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors group">
+              <span class="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 group-hover:border-primary/50 transition-colors">
+                <span class="material-symbols-outlined text-xl">work</span>
+              </span>
+              <span class="font-mono text-sm">linkedin.com/in/jakub</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Status Card -->
+      <div class="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6 relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+          <span class="material-symbols-outlined text-6xl">check_circle</span>
+        </div>
+
+        <div class="flex items-center gap-3 mb-2">
+          <div class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </div>
+          <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wide">
+            {t('contact.status.title')}
+          </span>
+        </div>
+        <p class="text-zinc-500 dark:text-zinc-500 font-mono text-xs mt-4">
+          {t('contact.status.version')}
+        </p>
+      </div>
+
+      <!-- Network -->
+      <div class="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6">
+        <h3 class="text-sm font-bold tracking-widest text-zinc-400 dark:text-zinc-600 uppercase mb-6">
+            {t('contact.network.title')}
+        </h3>
+        <div class="flex gap-4">
+          <a href="https://github.com/jakubkolacek" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-slate-900 dark:hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/jakubkolacek" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-slate-900 dark:hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<script define:vars={{ t_submitting: t('contact.form.submitting'), t_submit: t('contact.form.submit') }}>
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Reset messages
+    successMsg.classList.add('hidden');
+    errorMsg.classList.add('hidden');
+
+    // Set loading state
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `<span>${t_submitting}</span>`;
+    submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        successMsg.classList.remove('hidden');
+        form.reset();
+        // Reset Turnstile if it exists
+        if (window.turnstile) {
+            window.turnstile.reset();
+        }
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      errorMsg.classList.remove('hidden');
+    } finally {
+      // Restore button state
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+    }
+  });
+</script>
