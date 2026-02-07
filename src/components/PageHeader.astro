@@ -1,0 +1,44 @@
+---
+interface Props {
+  badge: string;
+  title: string;
+  subtitle?: string;
+  description?: string;
+}
+
+const { badge, title, subtitle, description } = Astro.props;
+
+const hasActions = Astro.slots.has('actions');
+---
+
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 border-b border-zinc-200 dark:border-zinc-800 pb-8 transition-colors">
+  <div class="flex flex-col gap-2 max-w-3xl">
+    <div class="flex items-center gap-3 mb-1">
+      <span class="px-2 py-1 rounded bg-primary/10 text-primary text-xs font-mono font-medium tracking-wide border border-primary/20">
+        {badge}
+      </span>
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tighter text-slate-900 dark:text-white font-mono">
+      {title}
+    </h1>
+
+    {subtitle && (
+      <p class="text-xl text-zinc-600 dark:text-zinc-400 font-mono mt-1">
+        {subtitle}
+      </p>
+    )}
+
+    {description && (
+      <p class={`text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed font-sans max-w-2xl ${subtitle ? 'mt-2' : 'mt-4'}`}>
+        {description}
+      </p>
+    )}
+  </div>
+
+  {hasActions && (
+    <div class="flex gap-3">
+      <slot name="actions" />
+    </div>
+  )}
+</div>
