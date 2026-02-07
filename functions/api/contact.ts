@@ -2,6 +2,7 @@
 interface Env {
   TURNSTILE_SECRET_KEY: string;
   RESEND_API_KEY: string;
+  CONTACT_EMAIL: string;
 }
 
 interface ContactRequest {
@@ -47,7 +48,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       },
       body: JSON.stringify({
         from: 'Contact Form <onboarding@resend.dev>', // Update this if you have a verified domain
-        to: ['jakub@kolacek.dev'],
+        to: [context.env.CONTACT_EMAIL],
         subject: `[Project Inquiry] ${category} - ${name}`,
         html: `
           <h1>New Project Inquiry</h1>
