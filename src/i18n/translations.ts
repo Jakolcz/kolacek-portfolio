@@ -73,7 +73,7 @@ export const translations = {
         'resume.job1.date': '06/2015 — Present',
         'resume.job1.bullet1': 'Developed microservices for Kuoni Tumlare, exposing Elasticsearch data via REST.',
         'resume.job1.bullet2': 'Implemented payment gateway customization and EET libraries for O2 Czech Republic.',
-        'resume.job1.bullet3': 'Created M2M adapters for payment terminals and SIM top-up services.',
+        'resume.job1.bullet3': 'Created M2M adapter for payment terminals and SIM top-up services.',
         'resume.job1.bullet4': 'Built a government data box importer for ČEZ Group with REST interface.',
         'resume.job1.bullet5': 'Maintained the Legislative Government Helpdesk for the Czech Republic Office of the Government.',
 
@@ -83,7 +83,6 @@ export const translations = {
         'resume.job2.date': '06/2013 — 05/2015',
         'resume.job2.bullet1': 'Developed internal workflow components (forms, requests) connecting to SAP via JCO.',
         'resume.job2.bullet2': 'Automated PDF generation using wkhtmltopdf and EMC Documentum integration.',
-        'resume.job2.bullet3': 'Maintained standard Java SE applications on application servers.',
 
         // Job 3
         'resume.job3.role': 'Android Developer',
@@ -99,7 +98,7 @@ export const translations = {
         'resume.sidebar.tech.data': 'Data',
 
         'resume.sidebar.education.title': 'EDUCATION',
-        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 74)',
+        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
         'resume.sidebar.education.degree': 'Information Technology & Database Systems',
         'resume.sidebar.education.date': '2009 — 2013',
 
@@ -177,7 +176,7 @@ export const translations = {
         'resume.job1.date': '06/2015 — Současnost',
         'resume.job1.bullet1': 'Vývoj mikroslužeb pro Kuoni Tumlare, zpřístupnění dat z Elasticsearch přes REST.',
         'resume.job1.bullet2': 'Implementace customizace platební brány a EET knihoven pro O2 Czech Republic.',
-        'resume.job1.bullet3': 'Tvorba M2M adaptérů pro platební terminály a dobíjení SIM karet.',
+        'resume.job1.bullet3': 'Tvorba M2M adaptéru pro platební terminály a dobíjení SIM karet.',
         'resume.job1.bullet4': 'Vývoj importéru datových schránek pro skupinu ČEZ s REST rozhraním.',
         'resume.job1.bullet5': 'Údržba Legislativního Helpdesku pro Úřad vlády ČR.',
 
@@ -187,7 +186,6 @@ export const translations = {
         'resume.job2.date': '06/2013 — 05/2015',
         'resume.job2.bullet1': 'Vývoj interních workflow komponent (formuláře, žádosti) napojených na SAP přes JCO.',
         'resume.job2.bullet2': 'Automatizace generování PDF pomocí wkhtmltopdf a integrace s EMC Documentum.',
-        'resume.job2.bullet3': 'Údržba standardních Java SE aplikací na aplikačních serverech.',
 
         // Job 3
         'resume.job3.role': 'Android Developer',
@@ -203,7 +201,7 @@ export const translations = {
         'resume.sidebar.tech.data': 'Data',
 
         'resume.sidebar.education.title': 'VZDĚLÁNÍ',
-        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 74)',
+        'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
         'resume.sidebar.education.degree': 'Informační technologie a databázové systémy',
         'resume.sidebar.education.date': '2009 — 2013',
 
