@@ -32,6 +32,42 @@ export const translations = {
         'hero.sectors': 'Banking, Travel agencies & Telecom',
         'hero.techStack': 'Tech Stack',
 
+        // Services Page
+        'services.badge': 'SERVICES',
+        'services.title': 'Reliable Backend Development & System Integration',
+        'services.description': 'I deliver practical, robust software solutions without unnecessary over-engineering. My focus is on stability, maintainability, and direct business value through clean code and proven architecture.',
+        'services.action': 'Start a Project',
+
+        'services.card1.title': 'Java Backend Development',
+        'services.card1.desc': 'Building scalable, enterprise-grade applications using modern Java (17+) and Spring Boot. I focus on creating secure, high-performance APIs and microservices.',
+        'services.card1.feat1.title': 'Secure by Design',
+        'services.card1.feat1.desc': 'OAuth2, JWT, and digital signatures (XAdES/PAdES).',
+        'services.card1.feat2.title': 'High Performance',
+        'services.card1.feat2.desc': 'Optimized JVM tuning and efficient Elasticsearch queries.',
+
+        'services.card2.title': 'System Integration',
+        'services.card2.desc': 'Seamlessly connecting disparate systems. I have extensive experience integrating 3rd party services to unify your data flow.',
+        'services.card2.bullet1': 'Payment Gateways (O2 / Barion)',
+        'services.card2.bullet2': 'ERP Systems (SAP JCO / Helios)',
+        'services.card2.bullet3': 'Government Data Boxes (Datové schránky)',
+
+        'services.card3.title': 'App Maintenance & Support',
+        'services.card3.desc': 'Keeping the lights on for critical systems. I stabilize legacy codebases, manage helpdesk tickets, and ensure portals run smoothly.',
+        'services.card3.tag1': 'Bug Fixing',
+        'services.card3.tag2': 'Legacy Refactor',
+        'services.card3.tag3': 'SLA Support',
+
+        'services.card4.title': 'Automation & Hardware Communication',
+        'services.card4.desc': 'Bridging the gap between digital software and physical hardware. I develop specialized communication layers for IoT devices and industrial equipment.',
+        'services.card4.sub1.title': 'Vending',
+        'services.card4.sub1.desc': 'MDB Protocol / Payment Systems',
+        'services.card4.sub2.title': 'Terminals',
+        'services.card4.sub2.desc': 'Card Reader Integration & Android',
+        'services.card4.sub3.title': 'Vision',
+        'services.card4.sub3.desc': 'Camera Stream Analysis / YOLO',
+
+        'services.techstack.title': 'TECHNOLOGIES I WORK WITH',
+
         // About Page
         'about.badge': 'ABOUT ME',
         'about.title': 'Hi, I\'m Jakub.',
@@ -134,6 +170,42 @@ export const translations = {
         'hero.experience': '10+ let zkušeností',
         'hero.sectors': 'Bankovnictví, Cestovní kanceláře & Telekomunikace',
         'hero.techStack': 'Tech stack',
+
+        // Services Page
+        'services.badge': 'SLUŽBY',
+        'services.title': 'Spolehlivý Backend Vývoj & Systémová Integrace',
+        'services.description': 'Dodávám praktická, robustní softwarová řešení bez zbytečného over-engineeringu. Zaměřuji se na stabilitu, udržitelnost a přímou obchodní hodnotu prostřednictvím čistého kódu a osvědčené architektury.',
+        'services.action': 'Začít Projekt',
+
+        'services.card1.title': 'Java Backend Vývoj',
+        'services.card1.desc': 'Tvorba škálovatelných enterprise aplikací s využitím moderní Javy (17+) a Spring Boot. Zaměřuji se na bezpečné, výkonné API a mikroslužby.',
+        'services.card1.feat1.title': 'Bezpečnostní Design',
+        'services.card1.feat1.desc': 'OAuth2, JWT a digitální podpisy (XAdES/PAdES).',
+        'services.card1.feat2.title': 'Vysoký Výkon',
+        'services.card1.feat2.desc': 'Optimalizované ladění JVM a efektivní dotazy v Elasticsearch.',
+
+        'services.card2.title': 'Systémová Integrace',
+        'services.card2.desc': 'Bezproblémové propojení různorodých systémů. Mám rozsáhlé zkušenosti s integrací služeb třetích stran pro sjednocení toku dat.',
+        'services.card2.bullet1': 'Platební Brány (O2 / Barion)',
+        'services.card2.bullet2': 'ERP Systémy (SAP JCO / Helios)',
+        'services.card2.bullet3': 'Datové Schránky',
+
+        'services.card3.title': 'Údržba a Podpora Aplikací',
+        'services.card3.desc': 'Udržování kritických systémů v chodu. Stabilizuji legacy kód, spravuji helpdesk tickety a zajišťuji hladký běh portálů.',
+        'services.card3.tag1': 'Opravy Chyb',
+        'services.card3.tag2': 'Refaktoring Legacy',
+        'services.card3.tag3': 'SLA Podpora',
+
+        'services.card4.title': 'Automatizace a Hardwarová Komunikace',
+        'services.card4.desc': 'Přemostění propasti mezi digitálním softwarem a fyzickým hardwarem. Vyvíjím specializované komunikační vrstvy pro IoT zařízení a průmyslové vybavení.',
+        'services.card4.sub1.title': 'Automaty',
+        'services.card4.sub1.desc': 'MDB Protokol / Platební Systémy',
+        'services.card4.sub2.title': 'Terminály',
+        'services.card4.sub2.desc': 'Integrace Čteček Karet & Android',
+        'services.card4.sub3.title': 'Vize',
+        'services.card4.sub3.desc': 'Analýza Kamerového Streamu / YOLO',
+
+        'services.techstack.title': 'TECHNOLOGIE SE KTERÝMI PRACUJI',
 
         // About Page
         'about.badge': 'O MNĚ',
