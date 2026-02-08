@@ -20,6 +20,7 @@ export const translations = {
         'meta.about.description': 'Learn more about Jakub Koláček, a senior Java backend developer based in Czech Republic with 10+ years of experience in enterprise systems.',
         'meta.services.description': 'Java backend development, system integration, app maintenance and IoT automation services by Jakub Koláček.',
         'meta.projects.description': 'Portfolio of backend development projects by Jakub Koláček — FinTech, enterprise integration, IoT and open source.',
+        'meta.contact.description': 'Get in touch with Jakub Koláček for Java backend development, system integration, or consulting services.',
 
         // Hero Section
         // TODO: Come up with something better
@@ -222,6 +223,7 @@ export const translations = {
         'meta.about.description': 'Zjistěte více o Jakubu Koláčkovi, senior Java backend vývojáři z Brna s více než 10 lety zkušeností v enterprise systémech.',
         'meta.services.description': 'Vývoj Java backendů, systémová integrace, údržba aplikací a IoT automatizace od Jakuba Koláčka.',
         'meta.projects.description': 'Portfolio backendových projektů Jakuba Koláčka — FinTech, enterprise integrace, IoT a open source.',
+        'meta.contact.description': 'Kontaktujte Jakuba Koláčka ohledně vývoje Java backendů, systémové integrace nebo konzultací.',
 
         // Hero Section
         'hero.role': 'Java vývojář pro B2B spolupráci',

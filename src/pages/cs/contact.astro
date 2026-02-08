@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<BaseLayout title={t('nav.contact') + " | Jakub Koláček"} description={t('contact.description')}>
+<BaseLayout title={t('nav.contact') + " | Jakub Koláček"} description={t('meta.contact.description')}>
   <Navbar />
   <ContactContent lang={lang} />
   <Footer />
