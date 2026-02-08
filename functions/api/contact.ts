@@ -17,6 +17,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
     const data: ContactRequest = await context.request.json() as ContactRequest;
     const { name, email, category, message, 'cf-turnstile-response': token } = data;
+    const ip = context.request.headers.get('CF-Connecting-IP'); // Get user's IP
 
     // 1. Verify Turnstile Token
     const turnstileResult = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
@@ -27,6 +28,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       body: JSON.stringify({
         secret: context.env.TURNSTILE_SECRET_KEY,
         response: token,
+        remoteip: ip || undefined,
       }),
     });
 
