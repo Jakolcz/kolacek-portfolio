@@ -177,6 +177,27 @@ export const translations = {
 
         'projects.techstack.title': 'TECHNOLOGIES I WORK WITH',
 
+        // Contact Page
+        'contact.badge': 'CONTACT',
+        'contact.title': '<Contact />',
+        'contact.description': 'Looking for a robust backend architecture? Let\'s discuss how I can help scale your Java applications.',
+        'contact.form.name': '// Full Name',
+        'contact.form.email': '// Email Address',
+        'contact.form.category': '// Project Category',
+        'contact.form.category.general': 'General Inquiry',
+        'contact.form.category.backend': 'Backend Development',
+        'contact.form.category.integration': 'System Integration',
+        'contact.form.category.consulting': 'Consulting',
+        'contact.form.message': '// Project Brief',
+        'contact.form.submit': 'Initialize Connection ->',
+        'contact.form.submitting': 'Transmitting...',
+        'contact.form.success': 'Connection established. Message transmitted successfully.',
+        'contact.form.error': 'Connection failed. Please try again.',
+
+        'contact.status.title': 'Available for new projects',
+        'contact.status.version': 'v1.0.4 - Operational',
+        'contact.network.title': 'Network Protocol',
+
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
         'footer.joke': 'Built with Java... just kidding, Astro, TypeScript & Tailwind.'
@@ -350,6 +371,27 @@ export const translations = {
         'projects.card10.desc': 'Vývojářský nástroj automatizující generování boilerplate kódu pomocí maven pluginu pro konektory Evolveum MidPoint Identity Management.',
 
         'projects.techstack.title': 'TECHNOLOGIE, SE KTERÝMI PRACUJI',
+
+        // Contact Page
+        'contact.badge': 'KONTAKT',
+        'contact.title': '<Contact />',
+        'contact.description': 'Hledáte robustní backendovou architekturu? Pojďme probrat, jak mohu pomoci škálovat vaše Java aplikace.',
+        'contact.form.name': '// Celé jméno',
+        'contact.form.email': '// Emailová adresa',
+        'contact.form.category': '// Kategorie projektu',
+        'contact.form.category.general': 'Obecný dotaz',
+        'contact.form.category.backend': 'Vývoj backendu',
+        'contact.form.category.integration': 'Systémová integrace',
+        'contact.form.category.consulting': 'Konzultace',
+        'contact.form.message': '// Popis projektu',
+        'contact.form.submit': 'Inicializovat spojení ->',
+        'contact.form.submitting': 'Odesílání...',
+        'contact.form.success': 'Spojení navázáno. Zpráva úspěšně přenesena.',
+        'contact.form.error': 'Spojení selhalo. Zkuste to prosím znovu.',
+
+        'contact.status.title': 'K dispozici pro nové projekty',
+        'contact.status.version': 'v1.0.4 - Funkční',
+        'contact.network.title': 'Síťový protokol',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
