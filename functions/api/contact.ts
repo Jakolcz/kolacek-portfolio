@@ -13,6 +13,15 @@ interface ContactRequest {
   'cf-turnstile-response': string;
 }
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
     const data: ContactRequest = await context.request.json() as ContactRequest;
@@ -42,6 +51,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // 2. Send Email via Resend
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeCategory = escapeHtml(category);
+    const safeMessage = escapeHtml(message);
+
     const emailResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -51,15 +65,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       body: JSON.stringify({
         from: 'Contact Form <onboarding@resend.dev>', // Update this if you have a verified domain
         to: [context.env.CONTACT_EMAIL],
-        subject: `[Project Inquiry] ${category} - ${name}`,
+        subject: `[Project Inquiry] ${safeCategory} - ${safeName}`,
         html: `
           <h1>New Project Inquiry</h1>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Category:</strong> ${category}</p>
+          <p><strong>Name:</strong> ${safeName}</p>
+          <p><strong>Email:</strong> ${safeEmail}</p>
+          <p><strong>Category:</strong> ${safeCategory}</p>
           <p><strong>Message:</strong></p>
           <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; margin-left: 0;">
-            ${message.replace(/\n/g, '<br>')}
+            ${safeMessage.replace(/\n/g, '<br>')}
           </blockquote>
         `,
       }),
