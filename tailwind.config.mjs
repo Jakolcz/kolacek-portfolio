@@ -13,8 +13,8 @@ export default {
                 'zinc-400': '#a1a1aa',
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-                mono: ['JetBrains Mono', 'monospace'],
+                sans: ['Inter Variable', 'sans-serif'],
+                mono: ['JetBrains Mono Variable', 'monospace'],
             },
             transitionProperty: {
                 'colors': 'color, background-color, border-color, text-decoration-color, fill, stroke',
