@@ -22,4 +22,7 @@ export default defineConfig({
             prefixDefaultLocale: false, // English at /, Czech at /cs/
         },
     },
+    build: {
+        inlineStylesheets: 'always',
+    },
 });
