@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import mapImage from '../assets/map.png';
 import {getLangFromUrl, useTranslations} from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -95,10 +97,12 @@ const techStack = [
 
     <div class="group relative col-span-1 md:col-span-1 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all trashadow-sm dark:shadow-none">
         <div class="absolute inset-0 bg-zinc-200 dark:bg-zinc-800">
-            <img
-                    alt={t('hero.mapAlt')}
-                    class="w-full h-full object-cover opacity-60 dark:opacity-40 grayscale mix-blend-multiply dark:mix-blend-luminosity group-hover:scale-110 transition-transform"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxGGDG5wQpvK_mhc9hlHzy3KzY1feq6Namt-U-wCYQetFZe-LjBzC-dtE6K63r4Tg0ztCSYfjeI1qlOBtbxPDQGPzAF-a8WJ6fxL6C6jTDKHlgTlGNGGlNHVAxC0QbTquUdcLsTKWqmOoO9lxs4v-oEAq_B2ddipN0rVwzvS_0uXHPle7A_vRctMW20PJkRNz63tOWCaYUSgbR3ITtCZ5AmJMDMGw8rFbbLDdua3aztYTzjoBzVIQQtcwkwQOSdxGP2FC2ZHQW8Ro"
+            <Image
+                src={mapImage}
+                alt={t('hero.mapAlt')}
+                class="w-full h-full object-cover opacity-60 dark:opacity-40 grayscale mix-blend-multiply dark:mix-blend-luminosity group-hover:scale-110 transition-transform"
+                width={512}
+                height={512}
             />
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 dark:from-zinc-900/90 to-transparent"></div>
