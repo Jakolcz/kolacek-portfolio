@@ -25,6 +25,15 @@ export default {
             transitionTimingFunction: {
                 DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
             },
+            keyframes: {
+                scroll: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(calc(-100% - 2rem))' },
+                },
+            },
+            animation: {
+                scroll: 'scroll 40s linear infinite',
+            },
         },
     },
     plugins: [],
