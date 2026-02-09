@@ -2,6 +2,12 @@
 import {getLangFromUrl, getLocalizedPath} from "../i18n/utils.ts";
 import {defaultLang, languages} from "../i18n/translations.ts";
 
+// Supports weights 100-900
+import '@fontsource-variable/inter';
+// Supports weights 100-800
+import '@fontsource-variable/jetbrains-mono';
+import '@fontsource/material-symbols-outlined/400.css';
+
 interface Props {
     title: string,
     description?: string,
@@ -52,12 +58,21 @@ const alternateUrls = Object.keys(languages).map((code) => ({
     {description && <meta name="twitter:description" content={description}/>}
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
-          rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"/>
+    <style is:global>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
 
     <script is:inline>
         // 1. Check if user has explicitly chosen a theme in localStorage
