@@ -31,25 +31,28 @@
 
 <script is:inline>
     // This script handles the click event for all theme toggle buttons
-    const themeToggleBtns = document.querySelectorAll('.theme-toggle');
+    // Block scope to prevent global namespace pollution
+    {
+        const themeToggleBtns = document.querySelectorAll('.theme-toggle');
 
-    themeToggleBtns.forEach(btn => {
-        // Prevent duplicate event listeners
-        if (btn.hasAttribute('data-initialized')) {
-            return;
-        }
-        btn.setAttribute('data-initialized', 'true');
-
-        btn.addEventListener('click', function () {
-            // Toggle dark mode on the document
-            document.documentElement.classList.toggle('dark');
-
-            // Save preference to localStorage
-            if (document.documentElement.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
+        themeToggleBtns.forEach(btn => {
+            // Prevent duplicate event listeners
+            if (btn.hasAttribute('data-initialized')) {
+                return;
             }
+            btn.setAttribute('data-initialized', 'true');
+
+            btn.addEventListener('click', function () {
+                // Toggle dark mode on the document
+                document.documentElement.classList.toggle('dark');
+
+                // Save preference to localStorage
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
         });
-    });
+    }
 </script>
