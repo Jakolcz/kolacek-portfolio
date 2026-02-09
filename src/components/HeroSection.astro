@@ -19,6 +19,8 @@ const techStack = [
         hoverColor: 'group-hover/icon:text-slate-900 dark:group-hover/icon:text-white'
     },
 ];
+
+const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
 ---
 <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)] mb-20 transition-colors">
 
@@ -137,14 +139,24 @@ const techStack = [
             <span class="material-symbols-outlined text-primary">layers</span>
             <span class="text-slate-900 dark:text-white font-mono font-bold">{t('hero.techStack')}</span>
         </div>
-        <div class="flex-1 w-full overflow-hidden relative mask-linear-fade">
-            <div class="flex gap-8 items-center whitespace-nowrap md:justify-around w-full">
-                {techStack.map((tech) => (
+        <div class="flex-1 w-full overflow-hidden relative mask-linear-fade group">
+            <div class="flex gap-8 w-full">
+                <div class="flex gap-8 items-center shrink-0 animate-scroll group-hover:[animation-play-state:paused] min-w-full">
+                    {duplicatedTechStack.map((tech) => (
                         <div class="flex items-center gap-2 group/icon">
                             <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`}>{tech.icon}</span>
                             <span class="text-zinc-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
                         </div>
-                ))}
+                    ))}
+                </div>
+                <div class="flex gap-8 items-center shrink-0 animate-scroll group-hover:[animation-play-state:paused] min-w-full" aria-hidden="true">
+                    {duplicatedTechStack.map((tech) => (
+                        <div class="flex items-center gap-2 group/icon">
+                            <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`}>{tech.icon}</span>
+                            <span class="text-zinc-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     </div>
