@@ -1,15 +1,12 @@
 ---
-
 ---
 <button
-        id="theme-toggle"
         type="button"
-        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+        class="theme-toggle text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
         aria-label="Toggle Dark Mode"
 >
     <svg
-            id="theme-toggle-light-icon"
-            class="hidden w-5 h-5 dark:block"
+            class="theme-toggle-light-icon hidden w-5 h-5 dark:block"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +18,7 @@
     </svg>
 
     <svg
-            id="theme-toggle-dark-icon"
-            class="w-5 h-5 dark:hidden"
+            class="theme-toggle-dark-icon w-5 h-5 dark:hidden"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,32 +30,29 @@
 </button>
 
 <script is:inline>
-    // This script handles the click event
-    const themeToggleBtn = document.getElementById('theme-toggle');
+    // This script handles the click event for all theme toggle buttons
+    // Block scope to prevent global namespace pollution
+    {
+        const themeToggleBtns = document.querySelectorAll('.theme-toggle');
 
-    themeToggleBtn.addEventListener('click', function () {
-        // toggle icons inside button
-        document.getElementById('theme-toggle-dark-icon').classList.toggle('hidden');
-        document.getElementById('theme-toggle-light-icon').classList.toggle('hidden');
+        themeToggleBtns.forEach(btn => {
+            // Prevent duplicate event listeners
+            if (btn.hasAttribute('data-initialized')) {
+                return;
+            }
+            btn.setAttribute('data-initialized', 'true');
 
-        // if set via local storage previously
-        if (localStorage.getItem('theme')) {
-            if (localStorage.getItem('theme') === 'light') {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            }
-        } else {
-            // if NOT set via local storage previously
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-    });
+            btn.addEventListener('click', function () {
+                // Toggle dark mode on the document
+                document.documentElement.classList.toggle('dark');
+
+                // Save preference to localStorage
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        });
+    }
 </script>
