@@ -42,9 +42,47 @@ const t = useTranslations(lang);
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white" aria-label="Toggle navigation menu">
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white" aria-label="Toggle navigation menu">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-slate-50 dark:bg-slate-950 border-b border-zinc-200 dark:border-white/5 shadow-lg">
+        <div class="px-4 pt-4 pb-6 space-y-4">
+            <nav class="flex flex-col gap-4">
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/', lang)}>{t('nav.home')}</a>
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/services', lang)}>{t('nav.services')}</a>
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/projects', lang)}>{t('nav.work')}</a>
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/about', lang)}>{t('nav.about')}</a>
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/contact', lang)}>{t('nav.contact')}</a>
+            </nav>
+
+            <div class="h-px w-full bg-zinc-200 dark:bg-zinc-800 transition-colors"></div>
+
+            <div class="flex items-center justify-between">
+                <LanguageSwitcher/>
+                <ThemeToggle/>
+            </div>
+        </div>
+    </div>
 </header>
+
+<script is:inline>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icon = btn?.querySelector('span');
+
+    btn?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+        if (icon) {
+            icon.textContent = menu?.classList.contains('hidden') ? 'menu' : 'close';
+        }
+    });
+</script>
