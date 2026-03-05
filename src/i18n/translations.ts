@@ -14,6 +14,7 @@ export const translations = {
         'nav.about': 'About',
         'nav.contact': 'Contact',
         'nav.resume': 'Resume',
+        'nav.privacy': 'Privacy Policy',
 
         // Meta
         'meta.home.description': 'Jakub Koláček — Senior Freelance Java Developer specializing in Spring Boot, Microservices & REST APIs. Available for B2B cooperation.',
@@ -21,6 +22,7 @@ export const translations = {
         'meta.services.description': 'Java backend development, system integration, app maintenance and IoT automation services by Jakub Koláček.',
         'meta.projects.description': 'Portfolio of backend development projects by Jakub Koláček — FinTech, enterprise integration, IoT and open source.',
         'meta.contact.description': 'Get in touch with Jakub Koláček for Java backend development, system integration, or consulting services.',
+        'meta.privacy.description': 'Privacy Policy and Data Processing information for Jakub Koláček\'s portfolio website.',
 
         // Hero Section
         // TODO: Come up with something better
@@ -200,6 +202,7 @@ export const translations = {
         'contact.form.submitting': 'Transmitting...',
         'contact.form.success': 'Connection established. Message transmitted successfully.',
         'contact.form.error': 'Connection failed. Please try again.',
+        'contact.form.consent': 'By submitting the form, you agree to the processing of <a href="/privacy" class="underline hover:text-primary transition-colors">personal data</a>.',
 
         'contact.status.title': 'Available for new projects',
         'contact.status.version': 'v1.0.4 - Operational',
@@ -217,6 +220,7 @@ export const translations = {
         'nav.about': 'O mně',
         'nav.contact': 'Kontakt',
         'nav.resume': 'Životopis',
+        'nav.privacy': 'Ochrana osobních údajů',
 
         // Meta
         'meta.home.description': 'Jakub Koláček — Senior Java vývojář na volné noze se specializací na Spring Boot, Microservices a REST API. K dispozici pro B2B spolupráci.',
@@ -224,6 +228,7 @@ export const translations = {
         'meta.services.description': 'Vývoj Java backendů, systémová integrace, údržba aplikací a IoT automatizace od Jakuba Koláčka.',
         'meta.projects.description': 'Portfolio backendových projektů Jakuba Koláčka — FinTech, enterprise integrace, IoT a open source.',
         'meta.contact.description': 'Kontaktujte Jakuba Koláčka ohledně vývoje Java backendů, systémové integrace nebo konzultací.',
+        'meta.privacy.description': 'Zásady ochrany osobních údajů a zpracování dat pro webové stránky Jakuba Koláčka.',
 
         // Hero Section
         'hero.role': 'Java vývojář pro B2B spolupráci',
@@ -402,6 +407,7 @@ export const translations = {
         'contact.form.submitting': 'Odesílání...',
         'contact.form.success': 'Spojení navázáno. Zpráva úspěšně přenesena.',
         'contact.form.error': 'Spojení selhalo. Zkuste to prosím znovu.',
+        'contact.form.consent': 'Odesláním formuláře souhlasíte se <a href="/cs/privacy" class="underline hover:text-primary transition-colors">zpracováním osobních údajů</a>.',
 
         'contact.status.title': 'K dispozici pro nové projekty',
         'contact.status.version': 'v1.0.4 - Funkční',
