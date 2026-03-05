@@ -1,0 +1,99 @@
+---
+import PageHeader from './PageHeader.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'en' | 'cs';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<main class="py-12 md:py-20 relative min-h-[calc(100vh-73px-200px)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <PageHeader
+      title={t('nav.privacy')}
+      subtitle={t('meta.privacy.description')}
+    />
+
+    <div class="mt-16 max-w-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+      <!-- Decoration -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+      <div class="relative space-y-12">
+        {lang === 'en' && (
+          <div class="prose prose-zinc dark:prose-invert max-w-none text-zinc-600 dark:text-zinc-400">
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">Privacy Policy</h1>
+
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-10 mb-4 flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">security</span>
+              Service Providers and Data Processing
+            </h2>
+            <p class="leading-relaxed mb-6">
+              We use select third-party service providers to facilitate the technical operation of this website. These providers act as data processors and process data only in accordance with our instructions and for the purposes stated below.
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">1. Hosting and Infrastructure (Cloudflare)</h3>
+            <p class="mb-4">This website is hosted on <strong class="text-slate-900 dark:text-white">Cloudflare Pages</strong>, a service provided by Cloudflare, Inc.</p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li><strong class="text-slate-900 dark:text-white">Purpose:</strong> To deliver the website content and execute the serverless code (Workers) required to process your contact form submission.</li>
+              <li><strong class="text-slate-900 dark:text-white">Data Processed:</strong> When you visit our site or submit a form, your IP address and standard web log data are processed by Cloudflare to ensure the security and reliability of the service.</li>
+              <li><strong class="text-slate-900 dark:text-white">Spam Protection:</strong> We use <strong class="text-slate-900 dark:text-white">Cloudflare Turnstile</strong> to protect our contact form from spam and automated bots. This service analyzes your interactions with the website (e.g., mouse movements) and technical device data to distinguish humans from software agents.</li>
+              <li><strong class="text-slate-900 dark:text-white">Privacy Policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline">Cloudflare Privacy Policy</a></li>
+            </ul>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">2. Email Delivery (Resend)</h3>
+            <p class="mb-4">We use <strong class="text-slate-900 dark:text-white">Resend</strong> (Resend Labs Inc.) as our email delivery provider.</p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li><strong class="text-slate-900 dark:text-white">Purpose:</strong> To securely transmit the contents of your contact form submission to our personal inbox.</li>
+              <li><strong class="text-slate-900 dark:text-white">How it works:</strong> When you submit the contact form, the data (your name, email, and message) is sent to Resend's API, which then delivers the email to us. We do not store your message in a database on our website; it exists only as an email in our inbox.</li>
+              <li><strong class="text-slate-900 dark:text-white">Privacy Policy:</strong> <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline">Resend Privacy Policy</a></li>
+            </ul>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">3. Data Retention</h3>
+            <p class="leading-relaxed">
+              Data submitted via the contact form is not stored on our web servers. It is forwarded immediately to our email inbox. We retain these emails only as long as necessary to answer your inquiry or to comply with legal record-keeping obligations.
+            </p>
+          </div>
+        )}
+
+        {lang === 'cs' && (
+          <div class="prose prose-zinc dark:prose-invert max-w-none text-zinc-600 dark:text-zinc-400">
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">Zásady ochrany osobních údajů</h1>
+
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-10 mb-4 flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">security</span>
+              Poskytovatelé služeb a zpracování dat
+            </h2>
+            <p class="leading-relaxed mb-6">
+              K zajištění technického provozu těchto webových stránek využíváme vybrané poskytovatele služeb třetích stran. Tito poskytovatelé jednají jako zpracovatelé osobních údajů a data zpracovávají pouze v souladu s našimi pokyny a pro níže uvedené účely.
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">1. Hosting a infrastruktura (Cloudflare)</h3>
+            <p class="mb-4">Tato webová stránka je hostována na službě <strong class="text-slate-900 dark:text-white">Cloudflare Pages</strong>, kterou poskytuje společnost Cloudflare, Inc.</p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li><strong class="text-slate-900 dark:text-white">Účel:</strong> Doručování obsahu webových stránek a spouštění serverless kódu (Cloudflare Workers) nezbytného pro zpracování odeslaného kontaktního formuláře.</li>
+              <li><strong class="text-slate-900 dark:text-white">Zpracovávaná data:</strong> Při návštěvě našich stránek nebo odeslání formuláře zpracovává Cloudflare vaši IP adresu a standardní webové logy za účelem zajištění bezpečnosti a spolehlivosti služby.</li>
+              <li><strong class="text-slate-900 dark:text-white">Ochrana proti spamu:</strong> Pro ochranu kontaktního formuláře před spamem a automatizovanými boty používáme službu <strong class="text-slate-900 dark:text-white">Cloudflare Turnstile</strong>. Tato služba analyzuje vaše interakce s webem (např. pohyby myši) a technické údaje o zařízení, aby odlišila skutečné uživatele od softwarových agentů.</li>
+              <li><strong class="text-slate-900 dark:text-white">Zásady ochrany osobních údajů:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline">Cloudflare Privacy Policy</a></li>
+            </ul>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">2. Doručování e-mailů (Resend)</h3>
+            <p class="mb-4">Jako poskytovatele pro doručování e-mailů využíváme službu <strong class="text-slate-900 dark:text-white">Resend</strong> (Resend Labs Inc.).</p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li><strong class="text-slate-900 dark:text-white">Účel:</strong> Bezpečný přenos obsahu vašeho kontaktního formuláře do naší e-mailové schránky.</li>
+              <li><strong class="text-slate-900 dark:text-white">Jak to funguje:</strong> Když odešlete kontaktní formulář, data (vaše jméno, e-mail a zpráva) jsou odeslána do API služby Resend, která nám následně doručí e-mail. Vaši zprávu neukládáme do žádné databáze na tomto webu; existuje pouze jako e-mail v naší příchozí poště.</li>
+              <li><strong class="text-slate-900 dark:text-white">Zásady ochrany osobních údajů:</strong> <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline">Resend Privacy Policy</a></li>
+            </ul>
+
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-8 mb-4">3. Uchovávání dat</h3>
+            <p class="leading-relaxed">
+              Údaje odeslané prostřednictvím kontaktního formuláře nejsou ukládány na našich webových serverech. Jsou okamžitě přeposlány do naší e-mailové schránky. Tyto e-maily uchováváme pouze po dobu nezbytně nutnou k vyřízení vašeho dotazu nebo pro splnění zákonných povinností archivace.
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</main>

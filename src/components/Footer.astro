@@ -26,6 +26,12 @@ const socialLinks = [
             </div>
 
             <div class="flex gap-6">
+                <a
+                        class="text-zinc-500 hover:text-primary transition-colors text-sm"
+                        href={getLocalizedPath('/privacy', lang)}
+                >
+                    {t('nav.privacy')}
+                </a>
                 {socialLinks.map((link) => (
                         <a
                                 class="text-zinc-500 hover:text-primary transition-colors text-sm"
