@@ -27,7 +27,7 @@ export const translations = {
 
         // Hero Section
         'hero.role': 'Open to senior backend roles & B2B contracts',
-        'hero.title': 'Robust Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">Backends</span> for Complex Enterprises',
+        'hero.title': 'Robust Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-700 dark:from-primary dark:to-emerald-200">Backends</span> for Complex Enterprises',
         'hero.description1': 'Senior Java Backend Engineer specializing in',
         'hero.tech1': 'Spring Boot',
         'hero.tech2': 'Microservices',
@@ -35,7 +35,7 @@ export const translations = {
         'hero.and': ', and',
         'hero.description2': 'Delivering scalable and efficient solutions tailored to your business needs.',
         'hero.currently': 'Currently building event-driven microservices for a global travel operator (contract) and my own products.',
-        'hero.mapAlt': 'Map showing my location,',
+        'hero.mapAlt': 'Map of Brno, Czech Republic',
         'hero.basedIn': 'Based in',
         'hero.location': 'Brno, CZ',
         'hero.since': 'Since 2013',
@@ -86,7 +86,7 @@ export const translations = {
         'about.journey.title': 'The Journey',
         'about.journey.p1': 'It all started at <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT Brno</strong>, a secondary technical school where I laid the groundwork for my engineering mindset. Since then, I\'ve spent 12+ years shipping production systems. I don\'t just write code; I engineer solutions that last.',
         'about.journey.p2': 'For years, I honed my craft at <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> and <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, navigating the complexities of large-scale corporate environments. These experiences taught me the value of rigor, process, and reliability.',
-        'about.journey.p3': 'Since <strong class="text-slate-900 dark:text-white font-semibold">June 2025</strong>, I\'ve been working independently (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> remains a long-running contract client, and alongside it I build my own products. I believe in proven tools—<strong class="text-primary font-mono">Java</strong>, <strong class="text-primary font-mono">Spring</strong>, and <strong class="text-primary font-mono">SQL</strong> are my weapons of choice because they work, and they scale. I\'m open to both B2B contracts and senior/lead backend roles.',
+        'about.journey.p3': 'Since <strong class="text-slate-900 dark:text-white font-semibold">June 2025</strong>, I\'ve been working independently (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> remains a long-running contract client, and alongside it I build my own products. I believe in proven tools—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong>, and <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> are my weapons of choice because they work, and they scale. I\'m open to both B2B contracts and senior/lead backend roles.',
         'about.journey.tag1': 'Stability',
         'about.journey.tag2': 'Backend',
         'about.journey.tag3': 'Architecture',
@@ -109,8 +109,6 @@ export const translations = {
         'resume.title': 'Jakub Koláček',
         'resume.subtitle': 'Senior Java Backend Developer',
         'resume.description': 'Specializing in event-driven microservices, identity & access management, and system integration. Building production systems with Java 25, Spring Boot 4, Kafka, and Kubernetes.',
-        'resume.actions.share': 'Share',
-        'resume.actions.download': 'Download PDF',
 
         'resume.experience.title': 'Professional Experience',
 
@@ -261,7 +259,7 @@ export const translations = {
 
         // Hero Section
         'hero.role': 'K dispozici pro senior pozice i B2B spolupráci',
-        'hero.title': 'Robustní Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">backendy</span> pro náročné enterprise systémy',
+        'hero.title': 'Robustní Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-700 dark:from-primary dark:to-emerald-200">backendy</span> pro náročné enterprise systémy',
         'hero.description1': 'Senior Java backend vývojář se specializací na',
         'hero.tech1': 'Spring Boot',
         'hero.tech2': 'Microservices',
@@ -269,7 +267,7 @@ export const translations = {
         'hero.and': ' a',
         'hero.description2': 'Tvořím škálovatelná řešení na míru vašemu byznysu.',
         'hero.currently': 'Aktuálně stavím event-driven mikroslužby pro globálního touroperátora (kontrakt) a vlastní produkty.',
-        'hero.mapAlt': 'Mapa ukazující mou polohu,',
+        'hero.mapAlt': 'Mapa Brna',
         'hero.basedIn': 'Sídlo',
         'hero.location': 'Brno',
         'hero.since': 'Od roku 2013',
@@ -343,8 +341,6 @@ export const translations = {
         'resume.title': 'Jakub Koláček',
         'resume.subtitle': 'Senior Java Backend Developer',
         'resume.description': 'Specializace na event-driven mikroslužby, správu identit a přístupů a systémovou integraci. Produkční systémy stavím na Javě 25, Spring Boot 4, Kafce a Kubernetes.',
-        'resume.actions.share': 'Sdílet',
-        'resume.actions.download': 'Stáhnout PDF',
 
         'resume.experience.title': 'Pracovní zkušenosti',
 

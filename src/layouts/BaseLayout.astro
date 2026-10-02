@@ -25,6 +25,27 @@ const alternateUrls = Object.keys(languages).map((code) => ({
     lang: code === 'en' ? 'en-US' : 'cs-CZ',
     href: new URL(getLocalizedPath(currentPath, code), siteUrl).href,
 }));
+
+const ogImage = `${siteUrl}/og-image.png`;
+
+// Structured data for search engines
+const profileJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+        '@type': 'Person',
+        name: 'Jakub Koláček',
+        jobTitle: 'Senior Java Backend Engineer',
+        url: siteUrl,
+        address: {'@type': 'PostalAddress', addressLocality: 'Brno', addressCountry: 'CZ'},
+        sameAs: [
+            'https://github.com/Jakolcz',
+            'https://www.linkedin.com/in/jakub-kol%C3%A1%C4%8Dek-7b714b84/',
+            'https://x.com/kolacek_dev',
+        ],
+        knowsAbout: ['Java', 'Spring Boot', 'Apache Kafka', 'Microservices', 'Kubernetes', 'Identity and Access Management', 'System Integration'],
+    },
+};
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -55,11 +76,19 @@ const alternateUrls = Object.keys(languages).map((code) => ({
     <meta property="og:url" content={canonicalURL.href}/>
     <meta property="og:locale" content={lang === 'cs' ? 'cs_CZ' : 'en_US'}/>
     <meta property="og:site_name" content="Jakub Koláček"/>
+    <meta property="og:image" content={ogImage}/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Jakub Koláček — Senior Java Backend Engineer"/>
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content={title}/>
     {description && <meta name="twitter:description" content={description}/>}
+    <meta name="twitter:image" content={ogImage}/>
+
+    <!-- Structured Data -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(profileJsonLd)}></script>
 
     <!-- Fonts -->
     <link rel="preload" href={iconFontUrl} as="font" type="font/woff2" crossorigin/>
