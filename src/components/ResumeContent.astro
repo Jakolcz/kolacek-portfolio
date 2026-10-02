@@ -7,17 +7,31 @@ const t = useTranslations(lang);
 
 const jobs = [
   {
+    role: t('resume.job0.role'),
+    company: t('resume.job0.company'),
+    date: t('resume.job0.date'),
+    companyInitial: 'JK',
+    tags: ['Java 25', 'Spring Boot 4', 'Kafka', 'Kubernetes', 'OpenSearch'],
+    bullets: [
+      t('resume.job0.bullet1'),
+      t('resume.job0.bullet2'),
+      t('resume.job0.bullet3'),
+      t('resume.job0.bullet4'),
+    ]
+  },
+  {
     role: t('resume.job1.role'),
     company: t('resume.job1.company'),
     date: t('resume.job1.date'),
     companyInitial: 'I',
-    tags: ['Java 8-25', 'Spring Boot', 'Kubernetes', 'Docker', 'Elasticsearch'],
+    tags: ['Java 8-21', 'Spring Boot', 'Kafka', 'Kubernetes', 'midPoint', 'Elasticsearch'],
     bullets: [
       t('resume.job1.bullet1'),
       t('resume.job1.bullet2'),
       t('resume.job1.bullet3'),
       t('resume.job1.bullet4'),
       t('resume.job1.bullet5'),
+      t('resume.job1.bullet6'),
     ]
   },
   {
@@ -48,15 +62,19 @@ const skills = {
   backend: {
     title: t('resume.sidebar.tech.backend'),
     level: t('resume.sidebar.tech.backend_level'),
-    tags: ['Java (8-25)', 'Spring Boot', 'Hibernate', 'Liquibase', 'Thymeleaf']
+    tags: ['Java (8-25)', 'Spring Boot', 'Quarkus', 'Kafka Streams', 'gRPC', 'Hibernate', 'Liquibase']
   },
   infrastructure: {
     title: t('resume.sidebar.tech.infrastructure'),
-    tags: ['Docker', 'Kubernetes', 'Jenkins', 'Maven', 'Linux']
+    tags: ['Kubernetes', 'Helm', 'ArgoCD', 'Istio', 'AWS', 'Docker', 'Jenkins', 'Maven', 'Linux']
   },
   data: {
     title: t('resume.sidebar.tech.data'),
-    tags: ['PostgreSQL', 'Oracle DB', 'Elasticsearch']
+    tags: ['PostgreSQL', 'Oracle DB', 'OpenSearch', 'Elasticsearch']
+  },
+  identity: {
+    title: t('resume.sidebar.tech.identity'),
+    tags: ['midPoint', 'ConnId', 'Keycloak / RH-SSO', 'Auth0', 'LDAP / SAML']
   }
 };
 ---
@@ -67,24 +85,13 @@ const skills = {
       title={t('resume.title')}
       subtitle={t('resume.subtitle')}
       description={t('resume.description')}
-    >
-      <div slot="actions" class="flex gap-3">
-        <button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-white font-medium hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors cursor-default">
-            <span class="material-symbols-outlined text-xl">share</span>
-            {t('resume.actions.share')}
-        </button>
-         <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white font-medium hover:bg-emerald-600 transition-colors shadow-lg shadow-primary/20">
-            <span class="material-symbols-outlined text-xl">download</span>
-            {t('resume.actions.download')}
-        </a>
-      </div>
-    </PageHeader>
+    />
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Left Column: Experience -->
         <div class="lg:col-span-2 space-y-8">
             <div class="flex items-center gap-3 mb-6">
-                 <span class="material-symbols-outlined text-primary text-3xl">work_history</span>
+                 <span class="material-symbols-outlined text-primary text-3xl" data-icon="work_history" aria-hidden="true"></span>
                  <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">{t('resume.experience.title')}</h2>
             </div>
 
@@ -175,6 +182,18 @@ const skills = {
                             ))}
                         </div>
                     </div>
+
+                    <!-- Identity -->
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3">{skills.identity.title}</h4>
+                        <div class="flex flex-wrap gap-2">
+                            {skills.identity.tags.map(tag => (
+                                <span class="px-2 py-1 rounded bg-zinc-200 dark:bg-zinc-800 text-slate-900 dark:text-zinc-300 text-xs font-mono border border-zinc-300 dark:border-zinc-700">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -203,11 +222,13 @@ const skills = {
                     {t('resume.sidebar.connect.text')}
                 </p>
                 <div class="flex gap-2">
-                    <a href="mailto:jakub@example.com" class="w-10 h-10 rounded bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-slate-900 dark:text-white hover:bg-primary hover:text-white transition-colors">
-                        <span class="material-symbols-outlined text-lg">mail</span>
+                    <a href="#" class="email-protect w-10 h-10 rounded bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-slate-900 dark:text-white hover:bg-primary hover:text-white transition-colors"
+                       data-user="jakub" data-domain="kolacek.dev" aria-label="Email">
+                        <span class="material-symbols-outlined text-lg" data-icon="mail" aria-hidden="true"></span>
                     </a>
-                     <a href="#" class="w-10 h-10 rounded bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-slate-900 dark:text-white hover:bg-primary hover:text-white transition-colors">
-                        <span class="material-symbols-outlined text-lg">link</span>
+                     <a href="https://www.linkedin.com/in/jakub-kol%C3%A1%C4%8Dek-7b714b84/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-slate-900 dark:text-white hover:bg-primary hover:text-white transition-colors"
+                       aria-label="LinkedIn">
+                        <span class="material-symbols-outlined text-lg" data-icon="link" aria-hidden="true"></span>
                     </a>
                 </div>
             </div>
@@ -215,3 +236,7 @@ const skills = {
         </div>
     </div>
 </main>
+
+<script>
+  import '../scripts/email-protect';
+</script>

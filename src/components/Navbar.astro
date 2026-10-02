@@ -11,7 +11,7 @@ const t = useTranslations(lang);
         <div class="flex h-16 items-center justify-between">
             <!-- Logo -->
             <a href={getLocalizedPath('/', lang)} class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary">terminal</span>
+                <span class="material-symbols-outlined text-primary" data-icon="terminal" aria-hidden="true"></span>
                 <span class="font-mono text-lg font-bold tracking-tight">kolacek.dev</span>
             </a>
 
@@ -24,6 +24,8 @@ const t = useTranslations(lang);
                        href={getLocalizedPath('/services', lang)}>{t('nav.services')}</a>
                     <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
                        href={getLocalizedPath('/projects', lang)}>{t('nav.work')}</a>
+                    <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
+                       href={getLocalizedPath('/resume', lang)}>{t('nav.resume')}</a>
                     <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
                        href={getLocalizedPath('/about', lang)}>{t('nav.about')}</a>
                     <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
@@ -43,7 +45,7 @@ const t = useTranslations(lang);
 
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white" aria-label="Toggle navigation menu">
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined" data-icon="menu" aria-hidden="true"></span>
             </button>
         </div>
     </div>
@@ -58,6 +60,8 @@ const t = useTranslations(lang);
                    href={getLocalizedPath('/services', lang)}>{t('nav.services')}</a>
                 <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
                    href={getLocalizedPath('/projects', lang)}>{t('nav.work')}</a>
+                <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
+                   href={getLocalizedPath('/resume', lang)}>{t('nav.resume')}</a>
                 <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
                    href={getLocalizedPath('/about', lang)}>{t('nav.about')}</a>
                 <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"
@@ -82,7 +86,7 @@ const t = useTranslations(lang);
     btn?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
         if (icon) {
-            icon.textContent = menu?.classList.contains('hidden') ? 'menu' : 'close';
+            icon.setAttribute('data-icon', menu?.classList.contains('hidden') ? 'menu' : 'close');
         }
     });
 </script>

@@ -6,7 +6,8 @@ import {defaultLang, languages} from "../i18n/translations.ts";
 import '@fontsource-variable/inter';
 // Supports weights 100-800
 import '@fontsource-variable/jetbrains-mono';
-import '@fontsource/material-symbols-outlined/400.css';
+// Icon font is declared below with font-display: block, so ligature names never flash as text
+import iconFontUrl from '@fontsource/material-symbols-outlined/files/material-symbols-outlined-latin-400-normal.woff2?url';
 
 interface Props {
     title: string,
@@ -61,6 +62,8 @@ const alternateUrls = Object.keys(languages).map((code) => ({
     {description && <meta name="twitter:description" content={description}/>}
 
     <!-- Fonts -->
+    <link rel="preload" href={iconFontUrl} as="font" type="font/woff2" crossorigin/>
+    <style is:inline set:html={`@font-face{font-family:'Material Symbols Outlined';font-style:normal;font-weight:400;font-display:block;src:url(${iconFontUrl}) format('woff2');}`}></style>
     <style is:global>
         .material-symbols-outlined {
             font-family: 'Material Symbols Outlined';
@@ -68,12 +71,19 @@ const alternateUrls = Object.keys(languages).map((code) => ({
             font-style: normal;
             font-size: 24px;
             display: inline-block;
+            width: 1em;
+            height: 1em;
+            overflow: hidden;
             line-height: 1;
             text-transform: none;
             letter-spacing: normal;
             word-wrap: normal;
             white-space: nowrap;
             direction: ltr;
+        }
+        /* Icon name lives in data-icon so it never shows up in the page's text content */
+        .material-symbols-outlined[data-icon]::before {
+            content: attr(data-icon);
         }
     </style>
 

@@ -15,7 +15,7 @@ const t = useTranslations(lang);
     <div slot="actions">
       <a href={getLocalizedPath('/contact', lang)} class="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-emerald-600 transition-colors shadow-lg shadow-primary/20">
         {t('services.action')}
-        <span class="material-symbols-outlined">arrow_forward</span>
+        <span class="material-symbols-outlined" data-icon="arrow_forward" aria-hidden="true"></span>
       </a>
     </div>
   </PageHeader>
@@ -25,12 +25,12 @@ const t = useTranslations(lang);
     <!-- Card 1: Java Backend Development -->
     <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all flex flex-col">
       <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
-        <span class="material-symbols-outlined text-9xl text-primary">coffee</span>
+        <span class="material-symbols-outlined text-9xl text-primary" data-icon="coffee" aria-hidden="true"></span>
       </div>
 
       <div class="mb-6">
         <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary text-2xl">coffee</span>
+          <span class="material-symbols-outlined text-primary text-2xl" data-icon="coffee" aria-hidden="true"></span>
         </div>
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card1.title')}</h3>
         <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
@@ -41,7 +41,7 @@ const t = useTranslations(lang);
       <div class="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-4 border border-zinc-200 dark:border-zinc-700/50">
           <div class="flex items-center gap-2 mb-2">
-            <span class="material-symbols-outlined text-primary">security</span>
+            <span class="material-symbols-outlined text-primary" data-icon="security" aria-hidden="true"></span>
             <span class="font-bold text-slate-900 dark:text-white text-sm font-mono">{t('services.card1.feat1.title')}</span>
           </div>
           <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
@@ -50,7 +50,7 @@ const t = useTranslations(lang);
         </div>
         <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-4 border border-zinc-200 dark:border-zinc-700/50">
           <div class="flex items-center gap-2 mb-2">
-            <span class="material-symbols-outlined text-primary">bolt</span>
+            <span class="material-symbols-outlined text-primary" data-icon="bolt" aria-hidden="true"></span>
             <span class="font-bold text-slate-900 dark:text-white text-sm font-mono">{t('services.card1.feat2.title')}</span>
           </div>
           <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
@@ -63,12 +63,12 @@ const t = useTranslations(lang);
     <!-- Card 2: System Integration -->
     <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all flex flex-col">
        <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
-        <span class="material-symbols-outlined text-9xl text-primary">hub</span>
+        <span class="material-symbols-outlined text-9xl text-primary" data-icon="hub" aria-hidden="true"></span>
       </div>
 
       <div class="mb-6">
         <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary text-2xl">hub</span>
+          <span class="material-symbols-outlined text-primary text-2xl" data-icon="hub" aria-hidden="true"></span>
         </div>
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card2.title')}</h3>
         <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
@@ -95,12 +95,12 @@ const t = useTranslations(lang);
     <!-- Card 3: App Maintenance & Support -->
     <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all flex flex-col">
       <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
-        <span class="material-symbols-outlined text-9xl text-primary">speed</span>
+        <span class="material-symbols-outlined text-9xl text-primary" data-icon="speed" aria-hidden="true"></span>
       </div>
 
       <div class="mb-6">
         <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary text-2xl">speed</span>
+          <span class="material-symbols-outlined text-primary text-2xl" data-icon="speed" aria-hidden="true"></span>
         </div>
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card3.title')}</h3>
         <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
@@ -124,12 +124,12 @@ const t = useTranslations(lang);
     <!-- Card 4: Automation & Hardware -->
     <div class="group relative bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 overflow-hidden hover:border-primary/50 transition-all flex flex-col">
        <div class="absolute top-0 right-0 p-8 opacity-5 dark:opacity-5 group-hover:opacity-10 dark:group-hover:opacity-10 transition-opacity pointer-events-none">
-        <span class="material-symbols-outlined text-9xl text-primary">memory</span>
+        <span class="material-symbols-outlined text-9xl text-primary" data-icon="memory" aria-hidden="true"></span>
       </div>
 
       <div class="mb-6">
         <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary text-2xl">memory</span>
+          <span class="material-symbols-outlined text-primary text-2xl" data-icon="memory" aria-hidden="true"></span>
         </div>
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-mono mb-4">{t('services.card4.title')}</h3>
         <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
@@ -139,21 +139,21 @@ const t = useTranslations(lang);
 
       <div class="mt-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
          <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
-            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">payments</span>
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto" data-icon="payments" aria-hidden="true"></span>
             <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub1.title')}</div>
             <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
                 {t('services.card4.sub1.desc')}
             </p>
          </div>
          <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
-            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">credit_card</span>
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto" data-icon="credit_card" aria-hidden="true"></span>
             <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub2.title')}</div>
             <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
                 {t('services.card4.sub2.desc')}
             </p>
          </div>
          <div class="bg-zinc-200/50 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50 text-center">
-            <span class="material-symbols-outlined text-primary mb-2 block mx-auto">visibility</span>
+            <span class="material-symbols-outlined text-primary mb-2 block mx-auto" data-icon="visibility" aria-hidden="true"></span>
             <div class="font-bold text-slate-900 dark:text-white text-xs font-mono mb-1">{t('services.card4.sub3.title')}</div>
             <p class="text-[10px] text-zinc-600 dark:text-zinc-400 leading-tight">
                 {t('services.card4.sub3.desc')}

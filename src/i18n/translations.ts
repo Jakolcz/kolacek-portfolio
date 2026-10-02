@@ -23,6 +23,7 @@ export const translations = {
         'meta.projects.description': 'Portfolio of backend development projects by Jakub Koláček — FinTech, enterprise integration, IoT and open source.',
         'meta.contact.description': 'Get in touch with Jakub Koláček for Java backend development, system integration, or consulting services.',
         'meta.privacy.description': 'Privacy Policy and Data Processing information for Jakub Koláček\'s portfolio website.',
+        'meta.resume.description': 'Resume of Jakub Koláček — senior Java backend engineer with 12+ years of experience in event-driven microservices, identity management, payments and system integration.',
 
         // Hero Section
         // TODO: Come up with something better
@@ -84,7 +85,7 @@ export const translations = {
         'about.journey.title': 'The Journey',
         'about.journey.p1': 'It all started at <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT</strong>, where I laid the groundwork for my engineering mindset. I don\'t just write code; I engineer solutions that last.',
         'about.journey.p2': 'For years, I honed my craft at <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> and <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, navigating the complexities of large-scale corporate environments. These experiences taught me the value of rigor, process, and reliability.',
-        'about.journey.p3': 'In the <strong class="text-slate-900 dark:text-white font-semibold">middle of 2025</strong>, I transitioned to freelancing. Now, I bring that same enterprise-grade stability to my clients directly. I believe in proven tools—<strong class="text-primary font-mono">Java</strong>, <strong class="text-primary font-mono">Spring</strong>, and <strong class="text-primary font-mono">SQL</strong> are my weapons of choice because they work, and they scale.',
+        'about.journey.p3': 'Since <strong class="text-slate-900 dark:text-white font-semibold">June 2025</strong>, I\'ve been working independently (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> remains a long-running contract client, and alongside it I build my own products. I believe in proven tools—<strong class="text-primary font-mono">Java</strong>, <strong class="text-primary font-mono">Spring</strong>, and <strong class="text-primary font-mono">SQL</strong> are my weapons of choice because they work, and they scale. I\'m open to both B2B contracts and senior/lead backend roles.',
         'about.journey.tag1': 'Stability',
         'about.journey.tag2': 'Backend',
         'about.journey.tag3': 'Architecture',
@@ -106,21 +107,31 @@ export const translations = {
         'resume.badge': 'AVAILABLE FOR WORK',
         'resume.title': 'Jakub Koláček',
         'resume.subtitle': 'Senior Java Backend Developer',
-        'resume.description': 'Specializing in scalable microservices, system integration, and high-performance backend systems. Building robust solutions with Java 17+, Spring Boot, and Docker.',
+        'resume.description': 'Specializing in event-driven microservices, identity & access management, and system integration. Building production systems with Java 25, Spring Boot 4, Kafka, and Kubernetes.',
         'resume.actions.share': 'Share',
         'resume.actions.download': 'Download PDF',
 
         'resume.experience.title': 'Professional Experience',
 
+        // Job 0
+        'resume.job0.role': 'Independent Backend Engineer (B2B)',
+        'resume.job0.company': 'Self-employed',
+        'resume.job0.date': '06/2025 — Present',
+        'resume.job0.bullet1': 'Contract for IBA CZ / Kuoni Tumlare: building and running an event-driven travel platform of ~40 Spring Boot microservices (Kafka, Kafka Streams, Avro, OpenSearch, gRPC).',
+        'resume.job0.bullet2': 'Led the platform-wide Spring Boot 4 / Java 25 migration with reusable OpenRewrite recipes.',
+        'resume.job0.bullet3': 'Own the shared libraries and Maven archetypes the whole team builds on, and run most production deployments (Kubernetes, Helm, ArgoCD).',
+        'resume.job0.bullet4': 'Building my own products: Gatlo (gatehouse operations SaaS) and Bidaro (AI budget analysis for construction & public procurement).',
+
         // Job 1
         'resume.job1.role': 'Senior Java Developer',
         'resume.job1.company': 'IBA CZ',
-        'resume.job1.date': '06/2015 — Present',
-        'resume.job1.bullet1': 'Developed microservices for Kuoni Tumlare, exposing Elasticsearch data via REST.',
-        'resume.job1.bullet2': 'Implemented payment gateway customization and EET libraries for O2 Czech Republic.',
-        'resume.job1.bullet3': 'Created M2M adapter for payment terminals and SIM top-up services.',
-        'resume.job1.bullet4': 'Built a government data box importer for ČEZ Group with REST interface.',
-        'resume.job1.bullet5': 'Maintained the Legislative Government Helpdesk for the Czech Republic Office of the Government.',
+        'resume.job1.date': '06/2015 — 05/2025',
+        'resume.job1.bullet1': 'Started many of the Kuoni Tumlare platform services: event-driven Spring Boot microservices on Kafka, with search via Elasticsearch/OpenSearch, REST and gRPC.',
+        'resume.job1.bullet2': 'Built midPoint identity & access management connectors (ConnId) for banks and public bodies (NBS, Poštová banka, PSS, ŘSD), including my own annotation-driven AbstractRestConnector framework.',
+        'resume.job1.bullet3': 'Implemented payment gateway customization for O2 Czech Republic.',
+        'resume.job1.bullet4': 'Created M2M adapter for payment terminals and SIM top-up services.',
+        'resume.job1.bullet5': 'Built a government data box importer for ČEZ Group with REST interface.',
+        'resume.job1.bullet6': 'Maintained the Legislative Government Helpdesk for the Czech Republic Office of the Government.',
 
         // Job 2
         'resume.job2.role': 'Java Developer',
@@ -141,13 +152,13 @@ export const translations = {
         'resume.sidebar.tech.backend_level': 'Expert',
         'resume.sidebar.tech.infrastructure': 'Infrastructure',
         'resume.sidebar.tech.data': 'Data',
+        'resume.sidebar.tech.identity': 'Identity & Access',
 
         'resume.sidebar.education.title': 'EDUCATION',
         'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
         'resume.sidebar.education.degree': 'Information Technology & Database Systems',
         'resume.sidebar.education.date': '2009 — 2013',
 
-        'resume.sidebar.certifications.title': 'CERTIFICATIONS',
         'resume.sidebar.connect.title': 'LET\'S CONNECT',
         'resume.sidebar.connect.text': 'Looking for a senior developer to lead your next big project? I\'m open to new opportunities.',
 
@@ -229,6 +240,7 @@ export const translations = {
         'meta.projects.description': 'Portfolio backendových projektů Jakuba Koláčka — FinTech, enterprise integrace, IoT a open source.',
         'meta.contact.description': 'Kontaktujte Jakuba Koláčka ohledně vývoje Java backendů, systémové integrace nebo konzultací.',
         'meta.privacy.description': 'Zásady ochrany osobních údajů a zpracování dat pro webové stránky Jakuba Koláčka.',
+        'meta.resume.description': 'Životopis Jakuba Koláčka — senior Java backend vývojáře s více než 12 lety zkušeností s event-driven mikroslužbami, správou identit, platbami a systémovou integrací.',
 
         // Hero Section
         'hero.role': 'Java vývojář pro B2B spolupráci',
@@ -289,7 +301,7 @@ export const translations = {
         'about.journey.title': 'Moje cesta',
         'about.journey.p1': 'Vše začalo na <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT</strong>, kde jsem získal základy inženýrského myšlení. Mým cílem není jen psát kód, ale tvořit trvanlivá a udržitelná řešení.',
         'about.journey.p2': 'Své zkušenosti jsem sbíral v <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> a <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, kde jsem se naučil pohybovat v komplexním korporátním prostředí. Díky tomu vím, jak důležitá je preciznost, nastavené procesy a spolehlivost.',
-        'about.journey.p3': 'V <strong class="text-slate-900 dark:text-white font-semibold">polovině roku 2025</strong> jsem přešel na volnou nohu. Svým klientům nyní nabízím enterprise kvalitu a stabilitu napřímo. Sázím na ověřené technologie—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong> a <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> jsou mé hlavní nástroje, protože jednoduše fungují a dobře se škálují.',
+        'about.journey.p3': 'Od <strong class="text-slate-900 dark:text-white font-semibold">června 2025</strong> pracuji jako nezávislý vývojář (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> zůstává mým dlouhodobým klientem a vedle toho stavím vlastní produkty. Sázím na ověřené technologie—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong> a <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> jsou mé hlavní nástroje, protože jednoduše fungují a dobře se škálují. Jsem otevřený B2B spolupráci i seniorním a vedoucím backendovým pozicím.',
         'about.journey.tag1': 'Stabilita',
         'about.journey.tag2': 'Backend',
         'about.journey.tag3': 'Architektura',
@@ -311,21 +323,31 @@ export const translations = {
         'resume.badge': 'K DISPOZICI',
         'resume.title': 'Jakub Koláček',
         'resume.subtitle': 'Senior Java Backend Developer',
-        'resume.description': 'Specializace na škálovatelné mikroslužby, systémovou integraci a výkonné backendové systémy. Tvorba robustních řešení s Java 17+, Spring Boot a Dockerem.',
+        'resume.description': 'Specializace na event-driven mikroslužby, správu identit a přístupů a systémovou integraci. Produkční systémy stavím na Javě 25, Spring Boot 4, Kafce a Kubernetes.',
         'resume.actions.share': 'Sdílet',
         'resume.actions.download': 'Stáhnout PDF',
 
         'resume.experience.title': 'Pracovní zkušenosti',
 
+        // Job 0
+        'resume.job0.role': 'Nezávislý backend vývojář (B2B)',
+        'resume.job0.company': 'OSVČ',
+        'resume.job0.date': '06/2025 — Současnost',
+        'resume.job0.bullet1': 'Kontrakt pro IBA CZ / Kuoni Tumlare: vývoj a provoz event-driven platformy pro cestovní ruch o zhruba 40 Spring Boot mikroslužbách (Kafka, Kafka Streams, Avro, OpenSearch, gRPC).',
+        'resume.job0.bullet2': 'Vedení migrace celé platformy na Spring Boot 4 / Java 25 pomocí znovupoužitelných OpenRewrite receptů.',
+        'resume.job0.bullet3': 'Správa sdílených knihoven a Maven archetypů, na kterých staví celý tým, a většina produkčních nasazení (Kubernetes, Helm, ArgoCD).',
+        'resume.job0.bullet4': 'Vývoj vlastních produktů: Gatlo (SaaS pro provoz vrátnic a ostrahy) a Bidaro (AI analýza rozpočtů ve stavebnictví a veřejných zakázkách).',
+
         // Job 1
         'resume.job1.role': 'Senior Java Developer',
         'resume.job1.company': 'IBA CZ',
-        'resume.job1.date': '06/2015 — Současnost',
-        'resume.job1.bullet1': 'Vývoj mikroslužeb pro Kuoni Tumlare, zpřístupnění dat z Elasticsearch přes REST.',
-        'resume.job1.bullet2': 'Implementace customizace platební brány a EET knihoven pro O2 Czech Republic.',
-        'resume.job1.bullet3': 'Tvorba M2M adaptéru pro platební terminály a dobíjení SIM karet.',
-        'resume.job1.bullet4': 'Vývoj importéru datových schránek pro skupinu ČEZ s REST rozhraním.',
-        'resume.job1.bullet5': 'Údržba Legislativního Helpdesku pro Úřad vlády ČR.',
+        'resume.job1.date': '06/2015 — 05/2025',
+        'resume.job1.bullet1': 'Založení řady služeb platformy Kuoni Tumlare: event-driven Spring Boot mikroslužby nad Kafkou s vyhledáváním přes Elasticsearch/OpenSearch, REST a gRPC.',
+        'resume.job1.bullet2': 'Konektory pro správu identit a přístupů v midPointu (ConnId) pro banky a veřejné instituce (NBS, Poštová banka, PSS, ŘSD), včetně vlastního anotačního frameworku AbstractRestConnector.',
+        'resume.job1.bullet3': 'Implementace customizace platební brány pro O2 Czech Republic.',
+        'resume.job1.bullet4': 'Tvorba M2M adaptéru pro platební terminály a dobíjení SIM karet.',
+        'resume.job1.bullet5': 'Vývoj importéru datových schránek pro skupinu ČEZ s REST rozhraním.',
+        'resume.job1.bullet6': 'Údržba Legislativního Helpdesku pro Úřad vlády ČR.',
 
         // Job 2
         'resume.job2.role': 'Java Developer',
@@ -346,13 +368,13 @@ export const translations = {
         'resume.sidebar.tech.backend_level': 'Expert',
         'resume.sidebar.tech.infrastructure': 'Infrastruktura',
         'resume.sidebar.tech.data': 'Data',
+        'resume.sidebar.tech.identity': 'Identity a přístupy',
 
         'resume.sidebar.education.title': 'VZDĚLÁNÍ',
         'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
         'resume.sidebar.education.degree': 'Informační technologie a databázové systémy',
         'resume.sidebar.education.date': '2009 — 2013',
 
-        'resume.sidebar.certifications.title': 'CERTIFIKACE',
         'resume.sidebar.connect.title': 'SPOJME SE',
         'resume.sidebar.connect.text': 'Hledáte seniorního vývojáře pro vedení vašeho dalšího velkého projektu? Jsem otevřen novým příležitostem.',
 

@@ -68,7 +68,7 @@ const t = useTranslations(lang);
               <option value="Consulting">{t('contact.form.category.consulting')}</option>
             </select>
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-500">
-              <span class="material-symbols-outlined text-sm">expand_more</span>
+              <span class="material-symbols-outlined text-sm" data-icon="expand_more" aria-hidden="true"></span>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ const t = useTranslations(lang);
             <a href="#" class="email-protect flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors group"
                data-user="jakub" data-domain="kolacek.dev">
               <span class="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 group-hover:border-primary/50 transition-colors">
-                <span class="material-symbols-outlined text-xl">mail</span>
+                <span class="material-symbols-outlined text-xl" data-icon="mail" aria-hidden="true"></span>
               </span>
               <span class="font-mono text-sm">jakub[at]kolacek.dev</span>
             </a>
@@ -132,7 +132,7 @@ const t = useTranslations(lang);
           <li>
             <a href="https://www.linkedin.com/in/jakub-kol%C3%A1%C4%8Dek-7b714b84/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors group">
               <span class="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 group-hover:border-primary/50 transition-colors">
-                <span class="material-symbols-outlined text-xl">work</span>
+                <span class="material-symbols-outlined text-xl" data-icon="work" aria-hidden="true"></span>
               </span>
               <span class="font-mono text-sm">linkedin.com/in/jakub-koláček</span>
             </a>
@@ -143,7 +143,7 @@ const t = useTranslations(lang);
       <!-- Status Card -->
       <div class="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-6 relative overflow-hidden group">
         <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-          <span class="material-symbols-outlined text-6xl">check_circle</span>
+          <span class="material-symbols-outlined text-6xl" data-icon="check_circle" aria-hidden="true"></span>
         </div>
 
         <div class="flex items-center gap-3 mb-2">
@@ -180,32 +180,15 @@ const t = useTranslations(lang);
 
 <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
+<script>
+  import '../scripts/email-protect';
+</script>
+
 <script define:vars={{ t_submitting: t('contact.form.submitting'), t_submit: t('contact.form.submit') }}>
   const form = document.getElementById('contact-form');
   const submitBtn = document.getElementById('submit-btn');
   const successMsg = document.getElementById('form-success');
   const errorMsg = document.getElementById('form-error');
-
-  // Email Protection
-  const emailLinks = document.querySelectorAll('.email-protect');
-  emailLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const user = link.getAttribute('data-user');
-      const domain = link.getAttribute('data-domain');
-      if (user && domain) {
-        window.location.href = `mailto:${user}@${domain}`;
-      }
-    });
-    // Optional: Update href on hover so users see the correct link in status bar
-    link.addEventListener('mouseover', () => {
-        const user = link.getAttribute('data-user');
-        const domain = link.getAttribute('data-domain');
-        if (user && domain) {
-            link.setAttribute('href', `mailto:${user}@${domain}`);
-        }
-    });
-  });
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
