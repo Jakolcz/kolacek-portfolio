@@ -1,12 +1,12 @@
 # Jakub Koláček — Senior Java Backend Developer
 
 [![Live Site](https://img.shields.io/badge/Live_Site-kolacek.dev-success?style=for-the-badge&logo=globe)](https://kolacek.dev)
-[![Status](https://img.shields.io/badge/Status-Available_for_B2B-blue?style=for-the-badge)](https://kolacek.dev#contact)
+[![Status](https://img.shields.io/badge/Status-Open_to_B2B_%26_senior_roles-blue?style=for-the-badge)](https://kolacek.dev/contact)
 
 > **"Robust Java Backends for Complex Enterprises."**
 
 Welcome to the source code of my personal portfolio. While this repository showcases a modern frontend implementation,
-my professional focus is on building stable, scalable backend systems for the Fintech, IoT, and Enterprise sectors.
+my professional focus is on building stable, scalable backend systems for the Fintech, Travel, Public sector, and Enterprise domains.
 
 Based in **Brno, Czech Republic** | coding since **2013**.
 
@@ -14,20 +14,21 @@ Based in **Brno, Czech Republic** | coding since **2013**.
 
 ## 👨‍💻 About Me
 
-I am a **Senior Freelance Java Developer** specializing in **Spring Boot**, **Microservices**, and **REST APIs**. I
+I am a **Senior Java Backend Engineer** specializing in **Spring Boot**, **Kafka / event-driven microservices**, and **identity & access management**. I
 deliver practical, robust software solutions without unnecessary over-engineering. My focus is on stability,
 maintainability, and direct business value through clean code.
 
-With over **10 years of experience**, I have moved from navigating large-scale corporate environments (IBA CZ, Hartmann
-Rico) to offering that same enterprise-grade stability directly to clients as a freelancer.
+With **12+ years of experience** in large-scale corporate environments (IBA CZ, Hartmann Rico), I have worked
+independently (B2B) since June 2025. IBA CZ / Kuoni Tumlare remains a long-running contract client, and I build my own
+products alongside it. I'm open to both **B2B contracts** and **senior/lead backend roles**.
 
 ### My Core Tech Stack (Backend)
 
-* **Languages:** Java 17+, SQL, TypeScript (for tooling).
-* **Frameworks:** Spring Boot, Spring Cloud, Hibernate.
+* **Languages:** Java (up to 25), SQL, TypeScript (for tooling).
+* **Frameworks:** Spring Boot 4, Quarkus, Kafka Streams, Hibernate.
 * **Architecture:** Microservices, REST APIs, System Integration.
 * **Security:** OAuth2, JWT, Digital Signatures (XAdES/PAdES).
-* **Infrastructure:** Docker, CI/CD pipelines.
+* **Infrastructure:** Kubernetes, Helm, ArgoCD, Docker, CI/CD pipelines.
 
 ---
 
@@ -63,8 +64,8 @@ Here are a few technical challenges I've solved. For a full list, visit the [Pro
 
 ### 🏢 Enterprise Integration
 
-* **Travel Microservices:** Scalable microservices exposing Elasticsearch data via REST APIs for a global travel
-  management company.
+* **Event-Driven Travel Platform:** ~40 Spring Boot microservices on Kafka / Kafka Streams with OpenSearch and gRPC for
+  a global travel operator, including a platform-wide Spring Boot 4 / Java 25 migration.
 * **Government Data Integration:** Automated parsing/ingestion of government data box messages (Datové schránky) into
   internal DBs.
 

@@ -16,7 +16,7 @@ const t = useTranslations(lang);
             </a>
 
             <!-- Desktop Nav -->
-            <div class="hidden md:flex items-center gap-8">
+            <div class="hidden lg:flex items-center gap-8">
                 <nav class="flex gap-6">
                     <a class="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors"
                        href={getLocalizedPath('/', lang)}>{t('nav.home')}</a>
@@ -44,14 +44,14 @@ const t = useTranslations(lang);
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white" aria-label="Toggle navigation menu">
+            <button id="mobile-menu-btn" class="lg:hidden text-zinc-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white" aria-label="Toggle navigation menu">
                 <span class="material-symbols-outlined" data-icon="menu" aria-hidden="true"></span>
             </button>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-slate-50 dark:bg-slate-950 border-b border-zinc-200 dark:border-white/5 shadow-lg">
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-16 left-0 right-0 bg-slate-50 dark:bg-slate-950 border-b border-zinc-200 dark:border-white/5 shadow-lg">
         <div class="px-4 pt-4 pb-6 space-y-4">
             <nav class="flex flex-col gap-4">
                 <a class="text-base font-medium text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors block"

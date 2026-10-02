@@ -17,8 +17,8 @@ export const translations = {
         'nav.privacy': 'Privacy Policy',
 
         // Meta
-        'meta.home.description': 'Jakub Koláček — Senior Freelance Java Developer specializing in Spring Boot, Microservices & REST APIs. Available for B2B cooperation.',
-        'meta.about.description': 'Learn more about Jakub Koláček, a senior Java backend developer based in Czech Republic with 10+ years of experience in enterprise systems.',
+        'meta.home.description': 'Jakub Koláček — Senior Java Backend Engineer (Spring Boot, Kafka, microservices) with 12+ years of experience. Open to B2B contracts and senior/lead backend roles.',
+        'meta.about.description': 'Learn more about Jakub Koláček, a senior Java backend engineer based in Czech Republic with 12+ years of experience in enterprise systems.',
         'meta.services.description': 'Java backend development, system integration, app maintenance and IoT automation services by Jakub Koláček.',
         'meta.projects.description': 'Portfolio of backend development projects by Jakub Koláček — FinTech, enterprise integration, IoT and open source.',
         'meta.contact.description': 'Get in touch with Jakub Koláček for Java backend development, system integration, or consulting services.',
@@ -26,20 +26,21 @@ export const translations = {
         'meta.resume.description': 'Resume of Jakub Koláček — senior Java backend engineer with 12+ years of experience in event-driven microservices, identity management, payments and system integration.',
 
         // Hero Section
-        // TODO: Come up with something better
-        'hero.role': 'Java Developer available for B2B cooperation',
+        'hero.role': 'Open to senior backend roles & B2B contracts',
         'hero.title': 'Robust Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">Backends</span> for Complex Enterprises',
-        'hero.description1': 'Senior Freelance Java Developer specializing in',
+        'hero.description1': 'Senior Java Backend Engineer specializing in',
         'hero.tech1': 'Spring Boot',
         'hero.tech2': 'Microservices',
         'hero.tech3': 'REST APIs',
+        'hero.and': ', and',
         'hero.description2': 'Delivering scalable and efficient solutions tailored to your business needs.',
+        'hero.currently': 'Currently building event-driven microservices for a global travel operator (contract) and my own products.',
         'hero.mapAlt': 'Map showing my location,',
         'hero.basedIn': 'Based in',
         'hero.location': 'Brno, CZ',
         'hero.since': 'Since 2013',
-        'hero.experience': '10+ years of experience',
-        'hero.sectors': 'Banking, Travel agencies & Telecom',
+        'hero.experience': '12+ years of experience',
+        'hero.sectors': 'Banking, Travel, Telecom & Public sector',
         'hero.techStack': 'Tech Stack',
 
         // Services Page
@@ -160,7 +161,7 @@ export const translations = {
         'resume.sidebar.education.date': '2009 — 2013',
 
         'resume.sidebar.connect.title': 'LET\'S CONNECT',
-        'resume.sidebar.connect.text': 'Looking for a senior developer to lead your next big project? I\'m open to new opportunities.',
+        'resume.sidebar.connect.text': 'Looking for a senior backend engineer, as a contractor or a team member? I\'m open to B2B contracts and senior/lead roles.',
 
         // Projects Page
         'projects.badge': 'PORTFOLIO',
@@ -215,7 +216,7 @@ export const translations = {
         'contact.form.error': 'Connection failed. Please try again.',
         'contact.form.consent': 'By submitting the form, you agree to the processing of <a href="/privacy" class="underline hover:text-primary transition-colors">personal data</a>.',
 
-        'contact.status.title': 'Available for new projects',
+        'contact.status.title': 'Available for B2B projects & senior roles',
         'contact.status.version': 'v1.0.4 - Operational',
         'contact.network.title': 'Network Protocol',
 
@@ -234,8 +235,8 @@ export const translations = {
         'nav.privacy': 'Ochrana osobních údajů',
 
         // Meta
-        'meta.home.description': 'Jakub Koláček — Senior Java vývojář na volné noze se specializací na Spring Boot, Microservices a REST API. K dispozici pro B2B spolupráci.',
-        'meta.about.description': 'Zjistěte více o Jakubu Koláčkovi, senior Java backend vývojáři z Brna s více než 10 lety zkušeností v enterprise systémech.',
+        'meta.home.description': 'Jakub Koláček — senior Java backend vývojář (Spring Boot, Kafka, mikroslužby) s více než 12 lety zkušeností. K dispozici pro B2B spolupráci i seniorní a vedoucí backendové pozice.',
+        'meta.about.description': 'Zjistěte více o Jakubu Koláčkovi, senior Java backend vývojáři z Brna s více než 12 lety zkušeností v enterprise systémech.',
         'meta.services.description': 'Vývoj Java backendů, systémová integrace, údržba aplikací a IoT automatizace od Jakuba Koláčka.',
         'meta.projects.description': 'Portfolio backendových projektů Jakuba Koláčka — FinTech, enterprise integrace, IoT a open source.',
         'meta.contact.description': 'Kontaktujte Jakuba Koláčka ohledně vývoje Java backendů, systémové integrace nebo konzultací.',
@@ -243,19 +244,21 @@ export const translations = {
         'meta.resume.description': 'Životopis Jakuba Koláčka — senior Java backend vývojáře s více než 12 lety zkušeností s event-driven mikroslužbami, správou identit, platbami a systémovou integrací.',
 
         // Hero Section
-        'hero.role': 'Java vývojář pro B2B spolupráci',
+        'hero.role': 'K dispozici pro senior pozice i B2B spolupráci',
         'hero.title': 'Robustní Java <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-200">backendy</span> pro náročné enterprise systémy',
-        'hero.description1': 'Senior Java vývojář na volné noze se specializací na',
+        'hero.description1': 'Senior Java backend vývojář se specializací na',
         'hero.tech1': 'Spring Boot',
         'hero.tech2': 'Microservices',
         'hero.tech3': 'REST API',
+        'hero.and': ' a',
         'hero.description2': 'Tvořím škálovatelná řešení na míru vašemu byznysu.',
+        'hero.currently': 'Aktuálně stavím event-driven mikroslužby pro globálního touroperátora (kontrakt) a vlastní produkty.',
         'hero.mapAlt': 'Mapa ukazující mou polohu,',
         'hero.basedIn': 'Sídlo',
         'hero.location': 'Brno',
         'hero.since': 'Od roku 2013',
-        'hero.experience': '10+ let zkušeností',
-        'hero.sectors': 'Bankovnictví, Cestovní kanceláře & Telekomunikace',
+        'hero.experience': '12+ let zkušeností',
+        'hero.sectors': 'Bankovnictví, cestovní ruch, telekomunikace & veřejný sektor',
         'hero.techStack': 'Tech stack',
 
         // Services Page
@@ -376,7 +379,7 @@ export const translations = {
         'resume.sidebar.education.date': '2009 — 2013',
 
         'resume.sidebar.connect.title': 'SPOJME SE',
-        'resume.sidebar.connect.text': 'Hledáte seniorního vývojáře pro vedení vašeho dalšího velkého projektu? Jsem otevřen novým příležitostem.',
+        'resume.sidebar.connect.text': 'Hledáte seniorního backend vývojáře, externě nebo do týmu? Jsem otevřený B2B spolupráci i seniorním a vedoucím pozicím.',
 
         // Projects Page
         'projects.badge': 'PORTFOLIO',
@@ -431,7 +434,7 @@ export const translations = {
         'contact.form.error': 'Spojení selhalo. Zkuste to prosím znovu.',
         'contact.form.consent': 'Odesláním formuláře souhlasíte se <a href="/cs/privacy" class="underline hover:text-primary transition-colors">zpracováním osobních údajů</a>.',
 
-        'contact.status.title': 'K dispozici pro nové projekty',
+        'contact.status.title': 'K dispozici pro B2B projekty i senior pozice',
         'contact.status.version': 'v1.0.4 - Funkční',
         'contact.network.title': 'Síťový protokol',
 
