@@ -65,6 +65,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       body: JSON.stringify({
         from: 'Contact Form <onboarding@resend.dev>', // Update this if you have a verified domain
         to: [context.env.CONTACT_EMAIL],
+        reply_to: email,
         subject: `[Project Inquiry] ${safeCategory} - ${safeName}`,
         html: `
           <h1>New Project Inquiry</h1>

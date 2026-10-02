@@ -50,26 +50,26 @@ export const translations = {
         'services.action': 'Start a Project',
 
         'services.card1.title': 'Java Backend Development',
-        'services.card1.desc': 'Building scalable, enterprise-grade applications using modern Java (17+) and Spring Boot. I focus on creating secure, high-performance APIs and microservices.',
+        'services.card1.desc': 'Building scalable, enterprise-grade applications with modern Java (up to 25) and Spring Boot: secure, high-performance APIs and event-driven microservices that stay maintainable as your business grows.',
         'services.card1.feat1.title': 'Secure by Design',
         'services.card1.feat1.desc': 'OAuth2, JWT, and digital signatures (XAdES/PAdES).',
         'services.card1.feat2.title': 'High Performance',
         'services.card1.feat2.desc': 'Optimized JVM tuning and efficient Elasticsearch queries.',
 
         'services.card2.title': 'System Integration',
-        'services.card2.desc': 'Seamlessly connecting disparate systems. I have extensive experience integrating 3rd party services to unify your data flow.',
+        'services.card2.desc': 'Seamlessly connecting disparate systems so your data flows without manual work. I have extensive experience integrating 3rd party services, from payment gateways to ERP and government systems.',
         'services.card2.bullet1': 'Payment Gateways (O2 / Barion)',
         'services.card2.bullet2': 'ERP Systems (SAP JCO / Helios)',
         'services.card2.bullet3': 'Government Data Boxes (Datové schránky)',
 
         'services.card3.title': 'App Maintenance & Support',
-        'services.card3.desc': 'Keeping the lights on for critical systems. I stabilize legacy codebases, manage helpdesk tickets, and ensure portals run smoothly.',
+        'services.card3.desc': 'Keeping the lights on for critical systems. I stabilize legacy codebases, upgrade them to supported versions, and handle support tickets, so your portals keep running and your team can focus on new features.',
         'services.card3.tag1': 'Bug Fixing',
         'services.card3.tag2': 'Legacy Refactor',
         'services.card3.tag3': 'SLA Support',
 
         'services.card4.title': 'Automation & Hardware Communication',
-        'services.card4.desc': 'Bridging the gap between digital software and physical hardware. I develop specialized communication layers for IoT devices and industrial equipment.',
+        'services.card4.desc': 'Bridging the gap between digital software and physical hardware. I develop specialized communication layers for IoT devices and industrial equipment, turning them into reliable, remotely managed parts of your system.',
         'services.card4.sub1.title': 'Vending',
         'services.card4.sub1.desc': 'MDB Protocol / Payment Systems',
         'services.card4.sub2.title': 'Terminals',
@@ -84,7 +84,7 @@ export const translations = {
         'about.title': 'Hi, I\'m Jakub.',
         'about.description': 'Senior Java Backend Developer based in Czech Republic. I build stable, scalable systems for enterprise and financial sectors.',
         'about.journey.title': 'The Journey',
-        'about.journey.p1': 'It all started at <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT</strong>, where I laid the groundwork for my engineering mindset. I don\'t just write code; I engineer solutions that last.',
+        'about.journey.p1': 'It all started at <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT Brno</strong>, a secondary technical school where I laid the groundwork for my engineering mindset. Since then, I\'ve spent 12+ years shipping production systems. I don\'t just write code; I engineer solutions that last.',
         'about.journey.p2': 'For years, I honed my craft at <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> and <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, navigating the complexities of large-scale corporate environments. These experiences taught me the value of rigor, process, and reliability.',
         'about.journey.p3': 'Since <strong class="text-slate-900 dark:text-white font-semibold">June 2025</strong>, I\'ve been working independently (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> remains a long-running contract client, and alongside it I build my own products. I believe in proven tools—<strong class="text-primary font-mono">Java</strong>, <strong class="text-primary font-mono">Spring</strong>, and <strong class="text-primary font-mono">SQL</strong> are my weapons of choice because they work, and they scale. I\'m open to both B2B contracts and senior/lead backend roles.',
         'about.journey.tag1': 'Stability',
@@ -157,7 +157,7 @@ export const translations = {
 
         'resume.sidebar.education.title': 'EDUCATION',
         'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
-        'resume.sidebar.education.degree': 'Information Technology & Database Systems',
+        'resume.sidebar.education.degree': 'IT & Database Systems — secondary technical school (Maturita)',
         'resume.sidebar.education.date': '2009 — 2013',
 
         'resume.sidebar.connect.title': 'LET\'S CONNECT',
@@ -215,7 +215,7 @@ export const translations = {
         // Contact Page
         'contact.badge': 'CONTACT',
         'contact.title': '<Contact />',
-        'contact.description': 'Looking for a robust backend architecture? Let\'s discuss how I can help scale your Java applications.',
+        'contact.description': 'Looking for a robust backend architecture, or hiring a senior backend engineer? Let\'s discuss how I can help.',
         'contact.form.name': '// Full Name',
         'contact.form.email': '// Email Address',
         'contact.form.category': '// Project Category',
@@ -223,6 +223,7 @@ export const translations = {
         'contact.form.category.backend': 'Backend Development',
         'contact.form.category.integration': 'System Integration',
         'contact.form.category.consulting': 'Consulting',
+        'contact.form.category.job': 'Job Opportunity',
         'contact.form.message': '// Project Brief',
         'contact.form.submit': 'Initialize Connection ->',
         'contact.form.submitting': 'Transmitting...',
@@ -233,6 +234,7 @@ export const translations = {
         'contact.status.title': 'Available for B2B projects & senior roles',
         'contact.status.version': 'v1.0.4 - Operational',
         'contact.network.title': 'Network Protocol',
+        'contact.direct.title': 'Direct Connect',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. All rights reserved.',
@@ -282,26 +284,26 @@ export const translations = {
         'services.action': 'Zahájit spolupráci',
 
         'services.card1.title': 'Vývoj Java backendů',
-        'services.card1.desc': 'Tvorba škálovatelných enterprise aplikací s využitím moderní Javy (17+) a Spring Boot. Zaměřuji se na bezpečné a výkonné API a mikroslužby.',
+        'services.card1.desc': 'Tvorba škálovatelných enterprise aplikací v moderní Javě (až po verzi 25) a Spring Bootu: bezpečná a výkonná API a event-driven mikroslužby, které zůstanou udržitelné i s růstem vašeho byznysu.',
         'services.card1.feat1.title': 'Bezpečnostní architektura',
         'services.card1.feat1.desc': 'OAuth2, JWT a digitální podpisy (XAdES/PAdES).',
         'services.card1.feat2.title': 'Vysoký výkon',
         'services.card1.feat2.desc': 'Optimalizované ladění JVM a efektivní dotazy v Elasticsearch.',
 
         'services.card2.title': 'Systémová integrace',
-        'services.card2.desc': 'Bezproblémové propojení různorodých systémů. Mám rozsáhlé zkušenosti s integrací služeb třetích stran pro sjednocení toku dat.',
+        'services.card2.desc': 'Bezproblémové propojení různorodých systémů, aby vaše data tekla bez ruční práce. Mám rozsáhlé zkušenosti s integrací služeb třetích stran, od platebních bran po ERP a státní systémy.',
         'services.card2.bullet1': 'Platební brány (O2 / Barion)',
         'services.card2.bullet2': 'ERP systémy (SAP JCO / Helios)',
         'services.card2.bullet3': 'Datové schránky',
 
         'services.card3.title': 'Údržba a podpora aplikací',
-        'services.card3.desc': 'Udržování kritických systémů v chodu. Stabilizuji legacy kód, spravuji helpdesk tickety a zajišťuji hladký běh portálů.',
+        'services.card3.desc': 'Udržování kritických systémů v chodu. Stabilizuji legacy kód, převádím ho na podporované verze a řeším tikety podpory, aby vaše portály běžely hladce a váš tým se mohl soustředit na nové funkce.',
         'services.card3.tag1': 'Opravy chyb',
         'services.card3.tag2': 'Refaktoring legacy kódu',
         'services.card3.tag3': 'SLA podpora',
 
         'services.card4.title': 'Automatizace a komunikace s hardwarem',
-        'services.card4.desc': 'Přemostění propasti mezi digitálním softwarem a fyzickým hardwarem. Vyvíjím specializované komunikační vrstvy pro IoT zařízení a průmyslové vybavení.',
+        'services.card4.desc': 'Přemostění propasti mezi digitálním softwarem a fyzickým hardwarem. Vyvíjím specializované komunikační vrstvy pro IoT zařízení a průmyslové vybavení, díky kterým se z nich stávají spolehlivé a vzdáleně spravované součásti vašeho systému.',
         'services.card4.sub1.title': 'Automaty',
         'services.card4.sub1.desc': 'MDB protokol / Platební systémy',
         'services.card4.sub2.title': 'Terminály',
@@ -316,7 +318,7 @@ export const translations = {
         'about.title': 'Ahoj, jsem Jakub.',
         'about.description': 'Jsem senior Java backend vývojář z Brna. Zaměřuji se na vývoj stabilních a škálovatelných systémů pro enterprise a finanční sektor.',
         'about.journey.title': 'Moje cesta',
-        'about.journey.p1': 'Vše začalo na <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT</strong>, kde jsem získal základy inženýrského myšlení. Mým cílem není jen psát kód, ale tvořit trvanlivá a udržitelná řešení.',
+        'about.journey.p1': 'Vše začalo na <strong class="text-slate-900 dark:text-white font-semibold">SPŠE IT Brno</strong>, střední průmyslové škole, kde jsem získal základy inženýrského myšlení. Od té doby už přes 12 let dodávám produkční systémy. Mým cílem není jen psát kód, ale tvořit trvanlivá a udržitelná řešení.',
         'about.journey.p2': 'Své zkušenosti jsem sbíral v <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ</strong> a <strong class="text-slate-900 dark:text-white font-semibold">Hartmann Rico</strong>, kde jsem se naučil pohybovat v komplexním korporátním prostředí. Díky tomu vím, jak důležitá je preciznost, nastavené procesy a spolehlivost.',
         'about.journey.p3': 'Od <strong class="text-slate-900 dark:text-white font-semibold">června 2025</strong> pracuji jako nezávislý vývojář (B2B). <strong class="text-slate-900 dark:text-white font-semibold">IBA CZ / Kuoni Tumlare</strong> zůstává mým dlouhodobým klientem a vedle toho stavím vlastní produkty. Sázím na ověřené technologie—<strong class="text-emerald-700 dark:text-primary font-mono">Java</strong>, <strong class="text-emerald-700 dark:text-primary font-mono">Spring</strong> a <strong class="text-emerald-700 dark:text-primary font-mono">SQL</strong> jsou mé hlavní nástroje, protože jednoduše fungují a dobře se škálují. Jsem otevřený B2B spolupráci i seniorním a vedoucím backendovým pozicím.',
         'about.journey.tag1': 'Stabilita',
@@ -389,7 +391,7 @@ export const translations = {
 
         'resume.sidebar.education.title': 'VZDĚLÁNÍ',
         'resume.sidebar.education.school': 'SPŠE IT Brno (Purkyňova 2832)',
-        'resume.sidebar.education.degree': 'Informační technologie a databázové systémy',
+        'resume.sidebar.education.degree': 'Informační technologie a databázové systémy — střední průmyslová škola (maturita)',
         'resume.sidebar.education.date': '2009 — 2013',
 
         'resume.sidebar.connect.title': 'SPOJME SE',
@@ -447,7 +449,7 @@ export const translations = {
         // Contact Page
         'contact.badge': 'KONTAKT',
         'contact.title': '<Contact />',
-        'contact.description': 'Hledáte robustní backendovou architekturu? Pojďme probrat, jak mohu pomoci škálovat vaše Java aplikace.',
+        'contact.description': 'Hledáte robustní backendovou architekturu nebo seniorního backend vývojáře do týmu? Pojďme probrat, jak vám mohu pomoci.',
         'contact.form.name': '// Celé jméno',
         'contact.form.email': '// Emailová adresa',
         'contact.form.category': '// Kategorie projektu',
@@ -455,6 +457,7 @@ export const translations = {
         'contact.form.category.backend': 'Vývoj backendu',
         'contact.form.category.integration': 'Systémová integrace',
         'contact.form.category.consulting': 'Konzultace',
+        'contact.form.category.job': 'Pracovní nabídka',
         'contact.form.message': '// Popis projektu',
         'contact.form.submit': 'Inicializovat spojení ->',
         'contact.form.submitting': 'Odesílání...',
@@ -465,6 +468,7 @@ export const translations = {
         'contact.status.title': 'K dispozici pro B2B projekty i senior pozice',
         'contact.status.version': 'v1.0.4 - Funkční',
         'contact.network.title': 'Síťový protokol',
+        'contact.direct.title': 'Přímý kontakt',
 
         // Footer
         'footer.copyright': '© {year} Jakub Koláček. Všechna práva vyhrazena.',
