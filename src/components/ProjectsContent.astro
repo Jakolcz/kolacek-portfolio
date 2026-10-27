@@ -1,6 +1,7 @@
 ---
 import PageHeader from './PageHeader.astro';
 import ProjectCard from './ProjectCard.astro';
+import TravelPlatformDiagram from './TravelPlatformDiagram.astro';
 import { useTranslations } from '../i18n/utils';
 
 interface Props {
@@ -22,7 +23,7 @@ const t = useTranslations(lang);
   <!-- Section 1: FinTech & Payments -->
   <section>
     <div class="flex items-center gap-3 mb-8">
-      <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="payments" aria-hidden="true"></span>
       <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
         {t('projects.section1.title')}
       </h2>
@@ -47,25 +48,34 @@ const t = useTranslations(lang);
   <!-- Section 2: Enterprise Systems & Integration -->
   <section>
     <div class="flex items-center gap-3 mb-8">
-      <span class="material-symbols-outlined text-primary text-3xl">dns</span>
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="dns" aria-hidden="true"></span>
       <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
         {t('projects.section2.title')}
       </h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card 1 -->
+      <!-- Card 1 (Featured - col-span-2) -->
       <ProjectCard
+        colSpan="md:col-span-2 lg:col-span-2"
         title={t('projects.card3.title')}
         description={t('projects.card3.desc')}
-        tags={['#Java 17', '#Spring Boot', '#Elasticsearch', '#Docker']}
-      />
+        tags={['#Java 25', '#Spring Boot 4', '#Kafka Streams', '#OpenSearch', '#gRPC', '#Kubernetes']}
+      >
+        <TravelPlatformDiagram slot="media" label={t('projects.card3.diagram.label')} caption={t('projects.card3.diagram.caption')} />
+      </ProjectCard>
       <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card11.title')}
+        description={t('projects.card11.desc')}
+        tags={['#OpenRewrite', '#Spring Boot 4', '#Java 25', '#Maven']}
+      />
+      <!-- Card 3 -->
       <ProjectCard
         title={t('projects.card4.title')}
         description={t('projects.card4.desc')}
         tags={['#XML', '#Integration', '#REST']}
       />
-      <!-- Card 3 -->
+      <!-- Card 4 -->
       <ProjectCard
         title={t('projects.card5.title')}
         description={t('projects.card5.desc')}
@@ -74,10 +84,35 @@ const t = useTranslations(lang);
     </div>
   </section>
 
-  <!-- Section 3: IoT & Logistics -->
+  <!-- Section 3: Identity & Access Management -->
   <section>
     <div class="flex items-center gap-3 mb-8">
-      <span class="material-symbols-outlined text-primary text-3xl">router</span>
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="badge" aria-hidden="true"></span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section5.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 (Large - col-span-2) -->
+      <ProjectCard
+        colSpan="md:col-span-2 lg:col-span-2"
+        title={t('projects.card12.title')}
+        description={t('projects.card12.desc')}
+        tags={['#midPoint', '#ConnId', '#Keycloak', '#REST', '#SOAP']}
+      />
+      <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card10.title')}
+        description={t('projects.card10.desc')}
+        tags={['#Java', '#XML', '#Codegen']}
+      />
+    </div>
+  </section>
+
+  <!-- Section 4: IoT & Logistics -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="router" aria-hidden="true"></span>
       <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
         {t('projects.section3.title')}
       </h2>
@@ -98,10 +133,34 @@ const t = useTranslations(lang);
     </div>
   </section>
 
-  <!-- Section 4: Experiments & Open Source -->
+  <!-- Section 5: Own Products -->
   <section>
     <div class="flex items-center gap-3 mb-8">
-      <span class="material-symbols-outlined text-primary text-3xl">science</span>
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="rocket_launch" aria-hidden="true"></span>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
+        {t('projects.section6.title')}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <ProjectCard
+        title={t('projects.card13.title')}
+        description={t('projects.card13.desc')}
+        tags={['#Java 25', '#Spring Boot 4', '#Multi-tenant', '#Kubernetes']}
+      />
+      <!-- Card 2 -->
+      <ProjectCard
+        title={t('projects.card14.title')}
+        description={t('projects.card14.desc')}
+        tags={['#Quarkus', '#Python', '#VectorSearch', '#NER', '#Next.js', '#Clerk']}
+      />
+    </div>
+  </section>
+
+  <!-- Section 6: Experiments -->
+  <section>
+    <div class="flex items-center gap-3 mb-8">
+      <span class="material-symbols-outlined text-primary text-3xl" data-icon="science" aria-hidden="true"></span>
       <h2 class="text-2xl font-bold text-slate-900 dark:text-white font-mono uppercase tracking-wide">
         {t('projects.section4.title')}
       </h2>
@@ -112,35 +171,24 @@ const t = useTranslations(lang);
         colSpan="md:col-span-2 lg:col-span-2"
         title={t('projects.card8.title')}
         description={t('projects.card8.desc')}
-        tags={['#ComputerVision', '#YOLO', '#OpenCV']}
-      />
-      <!-- Card 2 -->
-      <ProjectCard
-        title={t('projects.card9.title')}
-        description={t('projects.card9.desc')}
-        tags={['#Rust', '#WinAPI', '#Prank']}
-      />
-      <!-- Card 3 -->
-      <ProjectCard
-        title={t('projects.card10.title')}
-        description={t('projects.card10.desc')}
-        tags={['#Java', '#XML', '#Codegen']}
+        tags={['#ComputerVision', '#YOLO', '#OpenCV', '#ANPR']}
       />
     </div>
+    <p class="mt-6 text-sm font-mono text-zinc-600 dark:text-zinc-400" set:html={t('projects.section4.also')} />
   </section>
 
   <!-- Tech Stack Strip -->
   <div class="mt-24 text-center border-t border-zinc-200 dark:border-zinc-800 pt-16">
-    <h2 class="text-sm font-bold tracking-[0.2em] text-zinc-400 dark:text-zinc-600 uppercase mb-8">
+    <h2 class="text-sm font-bold tracking-[0.2em] text-zinc-600 dark:text-zinc-400 uppercase mb-8">
       {t('projects.techstack.title')}
     </h2>
-    <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">JAVA</span>
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">SPRING</span>
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">KAFKA</span>
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">DOCKER</span>
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">POSTGRESQL</span>
-      <span class="text-lg md:text-xl font-bold text-zinc-500 dark:text-zinc-500">AWS</span>
+    <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">JAVA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">SPRING</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">KAFKA</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">DOCKER</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">POSTGRESQL</span>
+      <span class="text-lg md:text-xl font-bold text-zinc-600 dark:text-zinc-400">AWS</span>
     </div>
   </div>
 </main>

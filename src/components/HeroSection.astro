@@ -26,7 +26,7 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
 
     <div class="group relative col-span-1 md:col-span-2 md:row-span-2 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 md:p-10 flex flex-col justify-between hover:border-primary/50 transition-all  shadow-sm dark:shadow-none">
         <div class="absolute top-0 right-0 p-6 opacity-10 dark:opacity-20 group-hover:opacity-20 dark:group-hover:opacity-40 transition-opacity">
-            <span class="material-symbols-outlined text-6xl text-primary">dns</span>
+            <span class="material-symbols-outlined text-6xl text-primary" data-icon="dns" aria-hidden="true"></span>
         </div>
         <div class="space-y-4">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-mono font-medium">
@@ -39,13 +39,18 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
             <h1 class="font-mono text-4xl md:text-5xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white" set:html={t('hero.title')}>
             </h1>
         </div>
-        <p class="text-zinc-600 dark:text-zinc-400 text-lg leading-relaxed max-w-md mt-6">
-            {t('hero.description1')}
-            <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech1')}</span>,
-            <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech2')}</span>, and
-            <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech3')}</span>.
-            {t('hero.description2')}
-        </p>
+        <div class="max-w-md mt-6 space-y-4">
+            <p class="text-zinc-600 dark:text-zinc-400 text-lg leading-relaxed">
+                {t('hero.description1')}
+                <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech1')}</span>,
+                <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech2')}</span>{t('hero.and')}
+                <span class="text-slate-900 dark:text-white font-medium">{t('hero.tech3')}</span>.
+                {t('hero.description2')}
+            </p>
+            <p class="text-sm font-mono text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <span class="text-emerald-700 dark:text-primary">//</span> {t('hero.currently')}
+            </p>
+        </div>
     </div>
 
     <div class="group relative col-span-1 md:col-span-1 md:row-span-2 bg-white dark:bg-[#1e1e1e] border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all flex flex-col shadow-sm dark:shadow-none">
@@ -53,43 +58,43 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
             <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
             <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
             <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
-            <span class="ml-2 text-xs text-zinc-500 dark:text-zinc-400 font-mono">jakub@dev-server:~</span>
+            <span class="ml-2 text-xs text-zinc-600 dark:text-zinc-400 font-mono">jakub@dev-server:~</span>
         </div>
         <div class="p-5 font-mono text-xs md:text-sm text-zinc-700 dark:text-zinc-300 flex flex-col gap-3 overflow-hidden h-full">
             <div>
                 <div class="flex gap-2">
-                    <span class="text-emerald-600 dark:text-primary">➜</span>
+                    <span class="text-emerald-700 dark:text-primary">➜</span>
                     <span class="text-blue-600 dark:text-blue-400">~</span>
-                    <span class="text-zinc-500">whoami</span>
+                    <span class="text-zinc-500 dark:text-zinc-400">whoami</span>
                 </div>
                 <div class="text-zinc-800 dark:text-zinc-300 ml-4">jakub_kolacek</div>
             </div>
 
             <div>
                 <div class="flex gap-2">
-                    <span class="text-emerald-600 dark:text-primary">➜</span>
+                    <span class="text-emerald-700 dark:text-primary">➜</span>
                     <span class="text-blue-600 dark:text-blue-400">~</span>
-                    <span class="text-zinc-500">cat status.txt</span>
+                    <span class="text-zinc-500 dark:text-zinc-400">cat status.txt</span>
                 </div>
-                <div class="text-emerald-600 dark:text-emerald-400 ml-4">● Online & Ready to Deploy</div>
+                <div class="text-emerald-700 dark:text-emerald-400 ml-4">● Online & Ready to Deploy</div>
             </div>
 
             <div>
                 <div class="flex gap-2">
-                    <span class="text-emerald-600 dark:text-primary">➜</span>
+                    <span class="text-emerald-700 dark:text-primary">➜</span>
                     <span class="text-blue-600 dark:text-blue-400">~</span>
-                    <span class="text-zinc-500">ls -la ./skills</span>
+                    <span class="text-zinc-500 dark:text-zinc-400">ls ./skills</span>
                 </div>
                 <div class="flex flex-col gap-0.5 ml-4 text-zinc-600 dark:text-zinc-400 opacity-90">
-                    <span>drwx------  java-ecosystem/</span>
-                    <span>drwx------  spring-boot-4/</span>
-                    <span>drwx------  cloud-native/</span>
-                    <span>drwx------  microservices/</span>
+                    <span class="truncate">event-streaming-kafka/</span>
+                    <span class="truncate">identity-mgmt-midpoint/</span>
+                    <span class="truncate">payments-integration/</span>
+                    <span class="truncate">spring-boot-4-migration/</span>
                 </div>
             </div>
 
             <div class="flex gap-2 mt-auto">
-                <span class="text-emerald-600 dark:text-primary">➜</span>
+                <span class="text-emerald-700 dark:text-primary">➜</span>
                 <span class="text-blue-600 dark:text-blue-400">~</span>
                 <span class="w-2 h-5 bg-zinc-600 dark:bg-zinc-400 animate-pulse"></span>
             </div>
@@ -115,7 +120,7 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
                     <p class="text-white font-bold text-lg">{t('hero.location')}</p>
                 </div>
                 <div class="bg-white/20 dark:bg-zinc-800/80 p-2 rounded-lg text-white dark:text-primary backdrop-blur-md dark:backdrop-blur-sm">
-                    <span class="material-symbols-outlined">location_on</span>
+                    <span class="material-symbols-outlined" data-icon="location_on" aria-hidden="true"></span>
                 </div>
             </div>
         </div>
@@ -124,11 +129,11 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
     <div class="group relative col-span-1 md:col-span-1 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-5 hover:border-primary/50 transition-all  flex flex-col justify-between shadow-sm dark:shadow-none">
         <div class="flex justify-between items-start">
             <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-transparent p-2 rounded-lg text-slate-900 dark:text-white group-hover:bg-primary group-hover:text-white dark:group-hover:text-slate-950 group-hover:border-primary transition-colors">
-                <span class="material-symbols-outlined">verified</span>
+                <span class="material-symbols-outlined" data-icon="verified" aria-hidden="true"></span>
             </div>
         </div>
         <div>
-            <p class="text-zinc-500 text-xs font-mono uppercase tracking-wider mb-2">{t('hero.since')}</p>
+            <p class="text-zinc-600 dark:text-zinc-400 text-xs font-mono uppercase tracking-wider mb-2">{t('hero.since')}</p>
             <p class="text-slate-900 dark:text-white font-bold text-3xl">{t('hero.experience')}</p>
             <p class="text-zinc-600 dark:text-zinc-400 text-sm mt-1">{t('hero.sectors')}</p>
         </div>
@@ -136,24 +141,24 @@ const duplicatedTechStack = [...techStack, ...techStack, ...techStack];
 
     <div class="col-span-1 md:col-span-3 lg:col-span-4 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 hover:border-primary/50 transition-all  overflow-hidden shadow-sm dark:shadow-none">
         <div class="shrink-0 flex items-center gap-2 border-r border-zinc-300 dark:border-zinc-800 pr-6 mr-2">
-            <span class="material-symbols-outlined text-primary">layers</span>
+            <span class="material-symbols-outlined text-primary" data-icon="layers" aria-hidden="true"></span>
             <span class="text-slate-900 dark:text-white font-mono font-bold">{t('hero.techStack')}</span>
         </div>
         <div class="flex-1 w-full overflow-hidden relative mask-linear-fade group">
             <div class="flex gap-8 w-full">
                 <div class="flex gap-8 items-center shrink-0 animate-scroll group-hover:[animation-play-state:paused] min-w-full">
-                    {duplicatedTechStack.map((tech) => (
-                        <div class="flex items-center gap-2 group/icon">
-                            <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`}>{tech.icon}</span>
-                            <span class="text-zinc-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
+                    {duplicatedTechStack.map((tech, i) => (
+                        <div class="flex items-center gap-2 group/icon" aria-hidden={i >= techStack.length ? 'true' : undefined}>
+                            <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`} data-icon={tech.icon} aria-hidden="true"></span>
+                            <span class="text-zinc-600 dark:text-zinc-400 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
                         </div>
                     ))}
                 </div>
                 <div class="flex gap-8 items-center shrink-0 animate-scroll group-hover:[animation-play-state:paused] min-w-full" aria-hidden="true">
                     {duplicatedTechStack.map((tech) => (
                         <div class="flex items-center gap-2 group/icon">
-                            <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`}>{tech.icon}</span>
-                            <span class="text-zinc-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
+                            <span class={`material-symbols-outlined text-zinc-400 ${tech.hoverColor} transition-colors text-3xl`} data-icon={tech.icon} aria-hidden="true"></span>
+                            <span class="text-zinc-600 dark:text-zinc-400 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white font-mono font-medium">{tech.name}</span>
                         </div>
                     ))}
                 </div>
