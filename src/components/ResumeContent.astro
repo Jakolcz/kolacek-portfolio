@@ -11,7 +11,7 @@ const jobs = [
     company: t('resume.job0.company'),
     date: t('resume.job0.date'),
     companyInitial: 'JK',
-    tags: ['Java 25', 'Spring Boot 4', 'Kafka', 'Kubernetes', 'OpenSearch'],
+    tags: ['Java 25', 'Spring Boot 4', 'Kafka Streams', 'OpenSearch', 'Kubernetes', 'OpenRewrite'],
     bullets: [
       t('resume.job0.bullet1'),
       t('resume.job0.bullet2'),
@@ -24,7 +24,7 @@ const jobs = [
     company: t('resume.job1.company'),
     date: t('resume.job1.date'),
     companyInitial: 'I',
-    tags: ['Java 8-21', 'Spring Boot', 'Kafka', 'Kubernetes', 'midPoint', 'Elasticsearch'],
+    tags: ['Java 8-25', 'Spring Boot', 'Kafka', 'Kubernetes', 'midPoint', 'Elasticsearch'],
     bullets: [
       t('resume.job1.bullet1'),
       t('resume.job1.bullet2'),
@@ -32,6 +32,7 @@ const jobs = [
       t('resume.job1.bullet4'),
       t('resume.job1.bullet5'),
       t('resume.job1.bullet6'),
+      t('resume.job1.bullet7'),
     ]
   },
   {
@@ -66,15 +67,15 @@ const skills = {
   },
   infrastructure: {
     title: t('resume.sidebar.tech.infrastructure'),
-    tags: ['Kubernetes', 'Helm', 'ArgoCD', 'Istio', 'AWS', 'Docker', 'Jenkins', 'Maven', 'Linux']
+    tags: ['Kubernetes', 'Helm', 'ArgoCD', 'Istio', 'AWS', 'Docker', 'Jenkins', 'GitLab CI', 'Maven', 'Linux']
   },
   data: {
     title: t('resume.sidebar.tech.data'),
-    tags: ['PostgreSQL', 'Oracle DB', 'OpenSearch', 'Elasticsearch']
+    tags: ['PostgreSQL', 'Oracle DB', 'OpenSearch', 'Elasticsearch', 'MongoDB']
   },
   identity: {
     title: t('resume.sidebar.tech.identity'),
-    tags: ['midPoint', 'ConnId', 'Keycloak / RH-SSO', 'Auth0', 'LDAP / SAML']
+    tags: ['midPoint / ConnId', 'Keycloak / RH-SSO', 'Auth0', 'OAuth2 / JWT', 'XAdES / PAdES']
   }
 };
 ---

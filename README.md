@@ -18,9 +18,10 @@ I am a **Senior Java Backend Engineer** specializing in **Spring Boot**, **Kafka
 deliver practical, robust software solutions without unnecessary over-engineering. My focus is on stability,
 maintainability, and direct business value through clean code.
 
-With **12+ years of experience** in large-scale corporate environments (IBA CZ, Hartmann Rico), I have worked
-independently (B2B) since June 2025. IBA CZ / Kuoni Tumlare remains a long-running contract client, and I build my own
-products alongside it. I'm open to both **B2B contracts** and **senior/lead backend roles**.
+With **13+ years of experience** in large-scale corporate environments (IBA CZ, Hartmann Rico), I have worked
+independently (B2B) since June 2025. A global travel company I've worked with since 2022 remains a long-running
+contract client, and I build my own products alongside it. I'm open to both **B2B contracts** and **senior/lead
+backend roles**.
 
 ### My Core Tech Stack (Backend)
 
@@ -64,7 +65,7 @@ Here are a few technical challenges I've solved. For a full list, visit the [Pro
 
 ### 🏢 Enterprise Integration
 
-* **Event-Driven Travel Platform:** ~40 Spring Boot microservices on Kafka / Kafka Streams with OpenSearch and gRPC for
+* **Event-Driven Travel Platform:** ~45 Spring Boot microservices on Kafka / Kafka Streams with OpenSearch and gRPC for
   a global travel operator, including a platform-wide Spring Boot 4 / Java 25 migration.
 * **Government Data Integration:** Automated parsing/ingestion of government data box messages (Datové schránky) into
   internal DBs.
