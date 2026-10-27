@@ -85,7 +85,14 @@ const skills = {
       title={t('resume.title')}
       subtitle={t('resume.subtitle')}
       description={t('resume.description')}
-    />
+    >
+      <div slot="actions" class="flex gap-3">
+        <a href={`/jakub-kolacek-cv-${lang}.pdf`} download class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-slate-950 font-medium hover:bg-emerald-600 transition-colors shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-xl" data-icon="download" aria-hidden="true"></span>
+          {t('resume.actions.download')}
+        </a>
+      </div>
+    </PageHeader>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Left Column: Experience -->

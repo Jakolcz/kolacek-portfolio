@@ -110,6 +110,8 @@ export const translations = {
         'resume.subtitle': 'Senior Java Backend Developer',
         'resume.description': 'Specializing in event-driven microservices, identity & access management, and system integration. Building production systems with Java 25, Spring Boot 4, Kafka, and Kubernetes.',
 
+        'resume.actions.download': 'Download PDF',
+
         'resume.experience.title': 'Professional Experience',
 
         // Job 0
@@ -341,6 +343,8 @@ export const translations = {
         'resume.title': 'Jakub Koláček',
         'resume.subtitle': 'Senior Java Backend Developer',
         'resume.description': 'Specializace na event-driven mikroslužby, správu identit a přístupů a systémovou integraci. Produkční systémy stavím na Javě 25, Spring Boot 4, Kafce a Kubernetes.',
+
+        'resume.actions.download': 'Stáhnout PDF',
 
         'resume.experience.title': 'Pracovní zkušenosti',
 
