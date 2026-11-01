@@ -17,24 +17,24 @@ const socialLinks = [
         <!-- Main footer content -->
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex flex-col items-center md:items-start gap-1">
-                <p class="text-zinc-500 dark:text-zinc-500 text-sm">
+                <p class="text-zinc-600 dark:text-zinc-400 text-sm">
                     {t('footer.copyright', {year: currentYear})}
                 </p>
-                <p class="text-zinc-400 dark:text-zinc-600 text-xs font-mono hidden sm:block transition-colors">
+                <p class="text-zinc-600 dark:text-zinc-400 text-xs font-mono hidden sm:block transition-colors">
                     {t('footer.joke')}
                 </p>
             </div>
 
             <div class="flex gap-6">
                 <a
-                        class="text-zinc-500 hover:text-primary transition-colors text-sm"
+                        class="text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors text-sm"
                         href={getLocalizedPath('/privacy', lang)}
                 >
                     {t('nav.privacy')}
                 </a>
                 {socialLinks.map((link) => (
                         <a
-                                class="text-zinc-500 hover:text-primary transition-colors text-sm"
+                                class="text-zinc-600 dark:text-zinc-400 hover:text-primary transition-colors text-sm"
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"

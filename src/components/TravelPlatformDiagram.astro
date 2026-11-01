@@ -1,0 +1,75 @@
+---
+interface Props {
+  label: string;
+  caption: string;
+}
+
+const { label, caption } = Astro.props;
+
+const box = 'fill-white dark:fill-zinc-800 stroke-zinc-300 dark:stroke-zinc-700';
+const text = 'fill-slate-900 dark:fill-zinc-100';
+const muted = 'fill-zinc-500 dark:fill-zinc-400';
+const line = 'stroke-zinc-400 dark:stroke-zinc-500';
+---
+
+<figure class="hidden sm:block">
+  <svg viewBox="0 0 640 320" class="w-full h-auto font-mono" role="img" aria-labelledby="travel-platform-diagram-title">
+    <title id="travel-platform-diagram-title">{label}</title>
+    <defs>
+      <marker id="tp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" class="fill-zinc-400 dark:fill-zinc-500"/>
+      </marker>
+    </defs>
+
+    <g stroke-width="1.5" text-anchor="middle">
+      <!-- Clients -> Istio -> services -->
+      <rect x="10" y="105" width="92" height="56" rx="8" class={box}/>
+      <text x="56" y="129" font-size="12" class={text}>Clients &amp;</text>
+      <text x="56" y="145" font-size="12" class={text}>partners</text>
+      <line x1="102" y1="133" x2="126" y2="133" class={line} marker-end="url(#tp-arrow)"/>
+
+      <rect x="128" y="105" width="80" height="56" rx="8" class={box}/>
+      <text x="168" y="129" font-size="12" class={text}>Istio</text>
+      <text x="168" y="145" font-size="10" class={muted}>ingress</text>
+
+      <rect x="128" y="22" width="80" height="44" rx="8" class={box}/>
+      <text x="168" y="48" font-size="12" class={text}>Auth0</text>
+      <line x1="168" y1="66" x2="168" y2="105" stroke-dasharray="4 3" class={line}/>
+
+      <line x1="208" y1="133" x2="232" y2="133" class={line} marker-end="url(#tp-arrow)"/>
+
+      <!-- Microservices -->
+      <rect x="234" y="12" width="236" height="188" rx="12" stroke-dasharray="6 4" class="fill-primary/5 stroke-primary/60"/>
+      <text x="352" y="34" font-size="12" font-weight="700" class={text}>~45 Spring Boot services</text>
+      <text x="352" y="50" font-size="10" class={muted}>REST · gRPC · Java 25</text>
+      {[64, 100].map((y) => [252, 304, 356, 408].map((x) => (
+        <rect x={x} y={y} width="44" height="28" rx="5" class={box}/>
+      )))}
+      <rect x="252" y="144" width="200" height="40" rx="6" class="fill-zinc-100 dark:fill-zinc-900 stroke-zinc-300 dark:stroke-zinc-700"/>
+      <text x="352" y="161" font-size="10" class={muted}>shared libraries</text>
+      <text x="352" y="175" font-size="10" class={muted}>Maven archetypes</text>
+
+      <!-- Event streaming -->
+      <line x1="310" y1="202" x2="310" y2="220" class={line} marker-start="url(#tp-arrow)" marker-end="url(#tp-arrow)"/>
+      <line x1="394" y1="202" x2="394" y2="220" class={line} marker-start="url(#tp-arrow)" marker-end="url(#tp-arrow)"/>
+      <rect x="234" y="222" width="236" height="48" rx="8" class="fill-primary/15 stroke-primary"/>
+      <text x="352" y="243" font-size="12" font-weight="700" class={text}>Kafka · Kafka Streams</text>
+      <text x="352" y="259" font-size="10" class={muted}>Avro + Schema Registry</text>
+
+      <!-- Data stores -->
+      <line x1="470" y1="65" x2="498" y2="65" class={line} marker-end="url(#tp-arrow)"/>
+      <rect x="500" y="40" width="128" height="50" rx="8" class={box}/>
+      <text x="564" y="69" font-size="12" class={text}>OpenSearch</text>
+
+      <line x1="470" y1="137" x2="498" y2="137" class={line} marker-end="url(#tp-arrow)"/>
+      <rect x="500" y="112" width="128" height="50" rx="8" class={box}/>
+      <text x="564" y="133" font-size="12" class={text}>PostgreSQL</text>
+      <text x="564" y="149" font-size="10" class={muted}>R2DBC</text>
+
+      <!-- Platform -->
+      <rect x="10" y="284" width="618" height="30" rx="8" class="fill-zinc-100 dark:fill-zinc-900 stroke-zinc-300 dark:stroke-zinc-700"/>
+      <text x="319" y="303" font-size="11" class={muted}>Kubernetes · Helm · ArgoCD (GitOps)</text>
+    </g>
+  </svg>
+  <figcaption class="mt-2 text-xs font-mono text-zinc-600 dark:text-zinc-400">{caption}</figcaption>
+</figure>
